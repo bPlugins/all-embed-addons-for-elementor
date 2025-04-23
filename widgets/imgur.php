@@ -162,7 +162,7 @@ class imgur_addon extends Widget_Base {
 	?>
 
 	<div class="imgr">
-  	<blockquote class="imgur-embed-pub" lang="en" data-id="a/<?php echo esc_url($imgur_link); ?>"><a href="//imgur.com/a/<?php echo esc_attr($imgur_link); ?>"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
+  	<blockquote class="imgur-embed-pub" lang="en" data-id="a/<?php echo esc_attr($imgur_link); ?>"><a href="//imgur.com/a/<?php echo esc_attr($imgur_link); ?>"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
 
 	<?php
 	}
