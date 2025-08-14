@@ -1,4 +1,4 @@
-=== All Embed - Elementor Addons  ===
+=== All Embed – Multi-Source Embed Widgets for Elementor  ===
 Plugin Name: All Embed Elementor Addons 
 Author URI: https://profiles.wordpress.org/bplugins/
 Contributors: bplugins, shehabulislam
