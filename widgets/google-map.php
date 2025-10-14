@@ -50,7 +50,7 @@ class google_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fas fa-map-marked-alt';
+		return 'bl_icon fas fa-map-marked-alt eicon-google-maps';
 	}
 
 	/**

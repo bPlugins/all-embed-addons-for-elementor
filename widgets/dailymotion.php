@@ -50,7 +50,7 @@ class dailymotion_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-dailymotion';
+		return 'bl_icon fab fa-dailymotion eicon-instagram-video';
 	}
 
 	/**

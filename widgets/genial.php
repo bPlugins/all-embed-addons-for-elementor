@@ -37,7 +37,7 @@ class genial_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'genial Embed', 'allembed' );
+		return esc_html__( 'Genial Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class genial_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-glide';
+		return 'bl_icon fab fa-glide eicon-media-carousel';
 	}
 
 	/**

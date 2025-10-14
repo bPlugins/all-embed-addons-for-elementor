@@ -37,7 +37,7 @@ class giphy_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'giphy Embed Player', 'allembed' );
+		return esc_html__( 'Giphy Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class giphy_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fas fa-cat';
+		return 'bl_icon fas fa-cat eicon-slideshow';
 	}
 
 	/**

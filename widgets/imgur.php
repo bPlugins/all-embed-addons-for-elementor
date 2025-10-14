@@ -37,7 +37,7 @@ class imgur_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'imgur Embed', 'allembed' );
+		return esc_html__( 'Imgur Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class imgur_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-intercom';
+		return 'bl_icon fab fa-intercom eicon-custom-css';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class imgur_addon extends Widget_Base {
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
-            'default' =>'jLrG0X1',
+            'default' =>'/8LMUReU',
        
         ]
     );
@@ -162,7 +162,7 @@ class imgur_addon extends Widget_Base {
 	?>
 
 	<div class="imgr">
-  	<blockquote class="imgur-embed-pub" lang="en" data-id="a/<?php echo esc_attr($imgur_link); ?>"><a href="//imgur.com/a/<?php echo esc_attr($imgur_link); ?>"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
+  	<blockquote class="imgur-embed-pub" lang="en" data-id="a/<?php echo esc_url($imgur_link); ?>"><a href="//imgur.com/a/<?php echo esc_attr($imgur_link); ?>"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
 
 	<?php
 	}

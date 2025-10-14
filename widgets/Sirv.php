@@ -50,7 +50,7 @@ class Sirv_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-unity';
+		return 'bl_icon fab fa-unity eicon-slider-3d';
 	}
 
 	/**

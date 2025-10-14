@@ -37,7 +37,7 @@ class facebook_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'facebook Embed', 'allembed' );
+		return esc_html__( 'Facebook Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class facebook_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-facebook-f';
+		return 'bl_icon fab fa-facebook-f eicon-fb-embed';
 	}
 
 	/**

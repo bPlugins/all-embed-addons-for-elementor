@@ -50,7 +50,7 @@ class codepen_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-codepen';
+		return 'bl_icon fab fa-codepen eicon-code';
 	}
 
 	/**

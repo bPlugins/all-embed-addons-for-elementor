@@ -37,7 +37,7 @@ class jotform_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'jotform Embed Form', 'allembed' );
+		return esc_html__( 'Jotform Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class jotform_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-wpforms';
+		return 'bl_icon fab fa-wpforms eicon-kit-parts';
 	}
 
 	/**

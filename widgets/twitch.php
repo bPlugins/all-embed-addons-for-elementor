@@ -37,7 +37,7 @@ class twitch_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'twitch Embed Player', 'allembed' );
+		return esc_html__( 'Twitch Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class twitch_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-twitch';
+		return 'bl_icon fab fa-twitch eicon-device-wide';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class twitch_addon extends Widget_Base {
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
-            'default' =>'https://player.twitch.tv/?channel=nerdstgamers&parent=www.example.com',
+            'default' =>'https://player.twitch.tv/?channel=wildpuptarts&parent=www.demo.bplugins.com',
        
         ]
     );

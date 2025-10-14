@@ -74,40 +74,92 @@ class allembed_Addon {
 	 */
 	private function include_widgets_files() {
 
-		require_once( __DIR__ . '/widgets/youtube_addon.php' );
-		require_once( __DIR__ . '/widgets/vimeo_addon.php' );
-		require_once( __DIR__ . '/widgets/soundcloud.php' );
-		require_once( __DIR__ . '/widgets/invison.php' );
-		require_once( __DIR__ . '/widgets/jotform.php' );
-		require_once( __DIR__ . '/widgets/google-map.php' );
-		require_once( __DIR__ . '/widgets/appointly.php' );
-		require_once( __DIR__ . '/widgets/spotify.php' );
-		require_once( __DIR__ . '/widgets/giphy.php' );
-		require_once( __DIR__ . '/widgets/imgur.php' );
-		require_once( __DIR__ . '/widgets/slideshare.php' );
-		require_once( __DIR__ . '/widgets/codepen.php' );
-		require_once( __DIR__ . '/widgets/twitch.php' );
-		require_once( __DIR__ . '/widgets/twitframe.php' );
-		require_once( __DIR__ . '/widgets/bandcamp.php' );
-		require_once( __DIR__ . '/widgets/dailymotion.php' );
-		require_once( __DIR__ . '/widgets/dartfish.php' );
-		require_once( __DIR__ . '/widgets/creddle.php' );
-		require_once( __DIR__ . '/widgets/genial.php' );
-		require_once( __DIR__ . '/widgets/Sirv.php' );
-		require_once( __DIR__ . '/widgets/mixcloud.php' );
-		require_once( __DIR__ . '/widgets/kuula.php' );
-		require_once( __DIR__ . '/widgets/facebook.php' );
-		require_once( __DIR__ . '/widgets/pinterest.php' );
-		require_once( __DIR__ . '/widgets/linkedin.php' );
-		require_once( __DIR__ . '/widgets/reddit.php' );
-	
+		$active_widgets = (array) get_option( 'aeafeGetBlocks', [] );
+		if(empty($active_widgets)) {
+			$active_widgets = ['default_list'];
+		}
+
+		if ( !in_array( 'bae_youtube_addon', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/youtube_addon.php' );
+		}
+		if ( !in_array( 'bae_vimeo_addon', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/vimeo_addon.php' );
+		}
+		if ( !in_array( 'bae_soundcloud', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/soundcloud.php' );
+		}
+		if ( !in_array( 'bae_invison', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/invison.php' );
+		}
+		if ( !in_array( 'bae_jotform', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/jotform.php' );
+		}
+		if ( !in_array( 'bae_google_map', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/google-map.php' );
+		}
+		if ( !in_array( 'bae_appointly', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/appointly.php' );
+		}
+		if ( !in_array( 'bae_spotify', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/spotify.php' );
+		}
+		if ( !in_array( 'bae_giphy', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/giphy.php' );
+		}
+		if ( !in_array( 'bae_imgur', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/imgur.php' );
+		}
+		if ( !in_array( 'bae_slideshare', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/slideshare.php' );
+		}
+		if ( !in_array( 'bae_codepen', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/codepen.php' );
+		}
+		if ( !in_array( 'bae_twitch', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/twitch.php' );
+		}
+		if ( !in_array( 'bae_twitframe', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/twitframe.php' );
+		}
+		if ( !in_array( 'bae_bandcamp', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/bandcamp.php' );
+		}
+		if ( !in_array( 'bae_dailymotion', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/dailymotion.php' );
+		}
+		if ( !in_array( 'bae_dartfish', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/dartfish.php' );
+		}
+		if ( !in_array( 'bae_genial', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/genial.php' );
+		}
+		if ( !in_array( 'bae_sirv', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/Sirv.php' );
+		}
+		if ( !in_array( 'bae_mixcloud', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/mixcloud.php' );
+		}
+		if ( !in_array( 'bae_kuula', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/kuula.php' );
+		}
+		if ( !in_array( 'bae_facebook', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/facebook.php' );
+		}
+		if ( !in_array( 'bae_pinterest', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/pinterest.php' );
+		}
+		if ( !in_array( 'bae_linkedin', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/linkedin.php' );
+		}
+		if ( !in_array( 'bae_reddit', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/reddit.php' );
+		}
 	}
 
 	public function widget_styles(){
 
 		wp_register_style("main-css",plugins_url("/assets/css/styler.css",__FILE__));
 		wp_enqueue_style( 'main-css' );
-
 	}
 
 
@@ -128,36 +180,88 @@ class allembed_Addon {
 		// Its is now safe to include Widgets files
 		$this->include_widgets_files();
 		// Register Widgets
+		$active_widgets = get_option( 'aeafeGetBlocks', [] );
 
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\youtube_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\vimeo_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\soundcloud_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\invison_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\jotform_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\google_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\appointly_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\spotify_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\giphy_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\imgur_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\slideshare_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\codepen_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\twitch_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\twitframe_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\bandcamp_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\dailymotion_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\dartfish_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\creddle_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\genial_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Sirv_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\mixcloud_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\kuula_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\facebook_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\pinterest_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\linkedin_addon() );
-		\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\reddit_addon() );
+		if(empty($active_widgets)) {
+			$active_widgets = ['default_list'];
+		}
 
+		if ( !in_array( 'bae_youtube_addon', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\youtube_addon() );
+		}
+		if ( !in_array( 'bae_vimeo_addon', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\vimeo_addon() );
+		}
+		if ( !in_array( 'bae_soundcloud', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\soundcloud_addon() );
+		}
+		if ( !in_array( 'bae_invison', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\invison_addon() );
+		}
+		if ( !in_array( 'bae_jotform', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\jotform_addon() );
+		}
+		if ( !in_array( 'bae_google_map', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\google_addon() );
+		}
+		if ( !in_array( 'bae_appointly', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\appointly_addon() );
+		}
+		if ( !in_array( 'bae_spotify', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\spotify_addon() );
+		}
+		if ( !in_array( 'bae_giphy', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\giphy_addon() );
+		}
+		if ( !in_array( 'bae_imgur', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\imgur_addon() );
+		}
+		if ( !in_array( 'bae_slideshare', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\slideshare_addon() );
+		}
+		if ( !in_array( 'bae_codepen', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\codepen_addon() );
+		}
+		if ( !in_array( 'bae_twitch', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\twitch_addon() );
+		}
+		if ( !in_array( 'bae_twitframe', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\twitframe_addon() );
+		}
+		if ( !in_array( 'bae_bandcamp', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\bandcamp_addon() );
+		}
+		if ( !in_array( 'bae_dailymotion', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\dailymotion_addon() );
+		}
+		if ( !in_array( 'bae_dartfish', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\dartfish_addon() );
+		}
+		if ( !in_array( 'bae_genial', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\genial_addon() );
+		}
+		if ( !in_array( 'bae_sirv', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\Sirv_addon() );
+		}
+		if ( !in_array( 'bae_mixcloud', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\mixcloud_addon() );
+		}
+		if ( !in_array( 'bae_kuula', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\kuula_addon() );
+		}
+		if ( !in_array( 'bae_facebook', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\facebook_addon() );
+		}
+		if ( !in_array( 'bae_pinterest', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\pinterest_addon() );
+		}
+		if ( !in_array( 'bae_linkedin', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\linkedin_addon() );
+		}
+		if ( !in_array( 'bae_reddit', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\reddit_addon() );
+		}
 	}
-	
 	//category registered
 	public function add_elementor_widget_categories( $elements_manager ) {
 
@@ -169,7 +273,7 @@ class allembed_Addon {
 			]
 		);
 	}
-
+	
 	/**
 	 *  Plugin class constructor
 	 *
@@ -191,7 +295,7 @@ class allembed_Addon {
 		add_action( 'elementor/elements/categories_registered',  [ $this,'add_elementor_widget_categories' ]);
 		add_action( 'elementor/editor/after_enqueue_styles', [ $this, 'editor_scripts' ] );
 	}
-
+	
 }
 allembed_Addon::instance();
 

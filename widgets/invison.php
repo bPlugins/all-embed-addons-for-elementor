@@ -37,7 +37,7 @@ class invison_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'invison Embed', 'allembed' );
+		return esc_html__( 'Invision Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class invison_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-invision';
+		return 'bl_icon fab fa-invision eicon-theme-style';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class invison_addon extends Widget_Base {
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
-            'default' =>'https://bplugins.invisionapp.com/freehand/lllll-x6FDAxxed',
+            'default' =>'https://miro.com/app/live-embed/uXjVJH7dtrE=/?embedMode=view_only_without_ui&moveToViewport=-1207,-400,3957,1947&embedId=903275034619',
        
         ]
     );

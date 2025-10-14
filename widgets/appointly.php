@@ -37,7 +37,7 @@ class appointly_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'appointly Embed Player', 'allembed' );
+		return esc_html__( 'Appointly Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class appointly_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon far fa-calendar-check';
+		return 'bl_icon far fa-calendar-check eicon-calendar';
 	}
 
 	/**

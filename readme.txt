@@ -1,10 +1,10 @@
 === All Embed – Multi-Source Embed Widgets for Elementor  ===
 Plugin Name: All Embed Elementor Addons 
 Author URI: https://profiles.wordpress.org/bplugins/
-Contributors: bplugins, shehabulislam
-Tags: elementor, elementor addon, embed, video , youtube
-Requires at least: 4.0.0
-Tested up to: 6.7
+Contributors: bplugins, shehabulislam, devhazrath
+Tags: elementor, elementor addon, embed, video, youtube
+Requires at least: 4.3
+Tested up to: 6.8
 Stable tag: 1.1.4
 Requires PHP: 7.1
 Donate link: https://www.buymeacoffee.com/abuhayat
@@ -29,7 +29,7 @@ All Embed Addon for Elementor enhances your Elementor experience by allowing you
 3. **SoundCloud Embed**: Embed audio tracks from SoundCloud.  
 4. **InVision Embed**: Display interactive prototypes from InVision.  
 5. **JotForm Embed**: Add forms created with JotForm.  
-6. **Google Maps Embed**: Integrate interactive Google Maps.  
+6. **Google Maps Embed**: Integrate interactive Google Maps.
 7. **Appointly Embed**: Schedule and manage appointments.  
 8. **Spotify Embed**: Showcase music, albums, or podcasts from Spotify.  
 9. **Giphy Embed**: Add fun and engaging GIFs from Giphy.  
@@ -41,15 +41,14 @@ All Embed Addon for Elementor enhances your Elementor experience by allowing you
 15. **Bandcamp Embed**: Share music from Bandcamp.  
 16. **Dailymotion Embed**: Embed Dailymotion videos.  
 17. **Dartfish Embed**: Share Dartfish sports videos.  
-18. **Creddle Embed**: Display resumes and other documents from Creddle.  
-19. **Genially Embed**: Add interactive visual content from Genially.  
-20. **Sirv Embed**: Showcase images with interactive zoom features.  
-21. **Mixcloud Embed**: Embed audio mixes from Mixcloud.  
-22. **Kuula Embed**: Share 360° images and VR content.  
-23. **Facebook Embed**: Add Facebook posts, pages, or videos.  
-24. **Pinterest Embed**: Share boards, pins, or profiles.  
-25. **LinkedIn Embed**: Showcase LinkedIn posts or profiles.  
-26. **Reddit Embed**: Embed posts and discussions from Reddit.  
+18. **Genially Embed**: Add interactive visual content from Genially.  
+19. **Sirv Embed**: Showcase images with interactive zoom features.  
+20. **Mixcloud Embed**: Embed audio mixes from Mixcloud.  
+21. **Kuula Embed**: Share 360° images and VR content.  
+22. **Facebook Embed**: Add Facebook posts, pages, or videos.  
+23. **Pinterest Embed**: Share boards, pins, or profiles.  
+24. **LinkedIn Embed**: Showcase LinkedIn posts or profiles.  
+25. **Reddit Embed**: Embed posts and discussions from Reddit.  
 
 == Installation ==
 
@@ -86,6 +85,17 @@ Liked that plugin? Hate it? Want a new feature?  [Send me some feedback](mailto:
 🔥 **[StreamCast](https://wordpress.org/plugins/streamcast)** – A fully-featured Radio Player Plugin for WordPresss.
 
 🔥 **[3D Viewer](https://3d-viewer.bplugins.com/)** – Display interactive 3D models on the webs. 
+
+== Screenshots ==
+1. LinkedIn Embed
+2. YouTube Embed
+3. Vimeo Embed
+4. Bandcamp and Soundcloud Embed
+5. All Embed Widgets
+6. Spotify Embed
+7. Facebook Embed
+8. Kulla Embed
+9. Reddit Embed and Settings Control
 
 == Changelog ==
 

@@ -37,7 +37,7 @@ class kuula_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'kuula Embed', 'allembed' );
+		return esc_html__( 'Kuula Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class kuula_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fas fa-vr-cardboard';
+		return 'bl_icon fas fa-vr-cardboard eicon-slider-3d';
 	}
 
 	/**

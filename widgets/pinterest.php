@@ -37,7 +37,7 @@ class pinterest_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'pinterest Embed', 'allembed' );
+		return esc_html__( 'Pinterest Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class pinterest_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-pinterest-square';
+		return 'bl_icon fab fa-pinterest-square eicon-pinterest';
 	}
 
 	/**

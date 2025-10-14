@@ -1,0 +1,17 @@
+@import '../../../bpl-tools/Admin/style.scss';
+#bptbDashboard{
+    .filterDemoModal{
+        border-radius: 8px;
+    }
+    .filterItemImg{
+        border-radius: 8px;
+    }
+    .filterDemoModal {
+        img{
+            border-radius: 5px 5px 0px 0px;
+        }
+    }
+    .overviewBanner img{
+        width: 100%;
+    }
+}

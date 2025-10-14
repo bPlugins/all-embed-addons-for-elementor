@@ -37,7 +37,7 @@ class mixcloud_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'mixcloud Player', 'allembed' );
+		return esc_html__( 'Mixcloud Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class mixcloud_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-mixcloud';
+		return 'bl_icon fab fa-mixcloud eicon-headphones';
 	}
 
 	/**

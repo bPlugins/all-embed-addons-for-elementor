@@ -37,7 +37,7 @@ class youtube_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Youtube Embed Player', 'allembed' );
+		return esc_html__( 'Youtube Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class youtube_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-youtube';
+		return 'bl_icon fab fa-youtube eicon-youtube';
 	}
 
 	/**
@@ -185,10 +185,9 @@ class youtube_addon extends Widget_Base {
 		$settings = $this->get_settings_for_display();
         $y_link    = $settings['y_link'];
         
-	
 	?>
 	
-  <div class="youb"><iframe src="<?php echo esc_url($y_link); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="youb b-youtube-embed"><iframe src="<?php echo esc_url($y_link); ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 	<?php
 	}

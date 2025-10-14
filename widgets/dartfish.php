@@ -37,7 +37,7 @@ class dartfish_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'dartfish Embed Player', 'allembed' );
+		return esc_html__( 'Dartfish Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class dartfish_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fas fa-fish';
+		return 'bl_icon fas fa-fish eicon-video-playlist';
 	}
 
 	/**

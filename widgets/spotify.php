@@ -37,7 +37,7 @@ class spotify_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'Spotify Embed Player', 'allembed' );
+		return esc_html__( 'Spotify Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class spotify_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-spotify';
+		return 'bl_icon fab fa-spotify eicon-spotify';
 	}
 
 	/**

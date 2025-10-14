@@ -37,7 +37,7 @@ class bandcamp_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'bandcamp Embed Player', 'allembed' );
+		return esc_html__( 'Bandcamp Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class bandcamp_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-bandcamp';
+		return 'bl_icon fab fa-bandcamp eicon-headphones';
 	}
 
 	/**

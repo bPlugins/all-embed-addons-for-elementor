@@ -50,7 +50,7 @@ class slideshare_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-slideshare';
+		return 'bl_icon fab fa-slideshare eicon-thumbnails-down';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class slideshare_addon extends Widget_Base {
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
-            'default' =>'https://www.slideshare.net/slideshow/embed_code/key/6QptqZ4MiLe0l',
+            'default' =>'https://www.slideshare.net/slideshow/embed_code/key/2zV4ihW2f4Vevf',
        
         ]
     );

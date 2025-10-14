@@ -37,7 +37,7 @@ class linkedin_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'linkedin Embed', 'allembed' );
+		return esc_html__( 'Linkedin Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class linkedin_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-linkedin';
+		return 'bl_icon fab fa-linkedin eicon-custom-css';
 	}
 
 	/**

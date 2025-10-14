@@ -37,7 +37,7 @@ class twitframe_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'twitframe Embed', 'allembed' );
+		return esc_html__( 'Twitframe Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class twitframe_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fas fa-retweet';
+		return 'bl_icon fas fa-retweet eicon-twitter-embed';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class twitframe_addon extends Widget_Base {
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
-            'default' =>'https://twitframe.com/show?url=https://twitter.com/FinancialTimes/status/1389769316216840203',
+            'default' =>'https://twitter.com/SpaceX/status/1732824684683784516?ref_src=twsrc%5Etfw',
        
         ]
     );
@@ -187,13 +187,33 @@ class twitframe_addon extends Widget_Base {
         $twitframe_link    = $settings['twitframe_link'];
         
 	
-	?>
+	if ( strpos( $twitframe_link, 'twitframe.com' ) !== false ) {
+			// Fallback iframe method
+			?>
+			<div class="twit">
+				<iframe
+					src="<?php echo esc_url( $twitframe_link ); ?>"
+					border="0"
+					frameborder="0"
+					scrolling="no"
+					allowtransparency="true"
+					loading="lazy"
+					style="width:100%;"
+				></iframe>
+			</div>
+			<?php
+		} else {
+			// Official Twitter Embed format
+			?>
+			<div class="twit">
+				<blockquote class="twitter-tweet">
+					<a href="<?php echo esc_url( $twitframe_link ); ?>"></a>
+				</blockquote>
+				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+			<?php
+		}
 	
-  <div class="twit"><iframe border=0 frameborder=0
- src="<?php echo esc_url($twitframe_link); ?>
-"></iframe></div>
-
-	<?php
 	}
 	/**
 	 * Render the widget output in the editor.

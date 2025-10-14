@@ -37,7 +37,7 @@ class reddit_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'reddit Embed', 'allembed' );
+		return esc_html__( 'Reddit Embed', 'allembed' );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class reddit_addon extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'bl_icon fab fa-reddit';
+		return 'bl_icon fab fa-reddit eicon-custom-css';
 	}
 
 	/**
@@ -100,7 +100,7 @@ class reddit_addon extends Widget_Base {
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
-            'default' =>'https://www.redditmedia.com/r/interestingasfuck/comments/nip04k/a_cow_escaped_from_a_polish_farm_and_was_spotted/?ref_source=embed&amp;ref=share&amp;embed=true',
+            'default' =>'https://www.reddit.com/r/HISHAMtalksANIME/comments/1o05c7n/ringoko/',
        
         ]
     );
@@ -186,11 +186,17 @@ class reddit_addon extends Widget_Base {
 		$settings = $this->get_settings_for_display();
         $reddit_link    = $settings['reddit_link']; 
 	
-	?>
+	if (strpos($reddit_link, 'redditmedia.com') !== false) {
+		echo '<iframe src="'.esc_url($reddit_link).'" sandbox="allow-scripts allow-same-origin allow-popups" scrolling="no"></iframe>';
+	} else {
+		?>
+		<blockquote class="reddit-embed-bq" data-embed-height="316">
+			<a href="<?php echo esc_url($reddit_link); ?>"></a>
+		</blockquote>
+		<script async src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
+		<?php
+	}
 
-	<div class="redditt"><iframe id="reddit-embed" src="<?php echo esc_url($reddit_link); ?>" sandbox="allow-scripts allow-same-origin allow-popups" scrolling="no"></iframe></div>
-
-	<?php
 	}
 	/**
 	 * Render the widget output in the editor.
