@@ -87,7 +87,7 @@ class mixcloud_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_mixcloud',
         [
-            'label' => __( 'mixcloud Content Settings', 'allembed' ),
+            'label' => __( 'Mixcloud Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class mixcloud_addon extends Widget_Base {
     $this->add_control(
         'mixcloud_link',
         [
-            'label' => esc_html__( 'mixcloud Link', 'allembed' ),
+            'label' => esc_html__( 'Mixcloud Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class mixcloud_addon extends Widget_Base {
 
     $this->start_controls_section(
         'mixcloud_ttabb', [
-            'label' =>esc_html__( 'mixcloud Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Mixcloud Other Settings', 'allembed' ),
         ]
     );
 

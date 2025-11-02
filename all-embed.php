@@ -187,7 +187,7 @@ if ( function_exists( 'aeafe_fs' ) ) {
 			$active = is_plugin_active( $plugin_file );
 
 			echo '<div class="notice notice-warning is-dismissible">';
-			echo '<p>' . esc_html__( '"Media Player Addon" requires "Elementor" to be installed and activated.', 'allembed' ) . '</p>';
+			echo '<p>' . esc_html__( '"All Embed – Multi-Source Embed Widgets" requires "Elementor" to be installed and activated.', 'allembed' ) . '</p>';
 
 			if ( ! $installed ) {
 				echo '<p><button class="button button-primary" id="allembed-install-elementor">' . esc_html__( 'Install Elementor', 'allembed' ) . '</button></p>';

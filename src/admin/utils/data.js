@@ -56,7 +56,7 @@ export const demoInfo = {
 	title: 'Live Overview',
 	description: 'Click on any style to view it live',
 	allInOneLabel: 'See All Demo',
-	allInOneLink: 'https://demo.bplugins.com/demo/',
+	allInOneLink: 'https://bplugins.com/products/all-embed-addons-for-elementor/#demos',
 	demos: [
 		{
 			icon: '',

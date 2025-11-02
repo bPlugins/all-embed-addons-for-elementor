@@ -87,7 +87,7 @@ class reddit_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_reddit',
         [
-            'label' => __( 'reddit Content Settings', 'allembed' ),
+            'label' => __( 'Reddit Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class reddit_addon extends Widget_Base {
     $this->add_control(
         'reddit_link',
         [
-            'label' => esc_html__( 'reddit Link', 'allembed' ),
+            'label' => esc_html__( 'Reddit Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class reddit_addon extends Widget_Base {
 
     $this->start_controls_section(
         'reddit_ttabb', [
-            'label' =>esc_html__( 'reddit Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Reddit Other Settings', 'allembed' ),
         ]
     );
 

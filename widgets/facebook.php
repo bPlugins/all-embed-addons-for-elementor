@@ -87,7 +87,7 @@ class facebook_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_facebook',
         [
-            'label' => __( 'facebook Content Settings', 'allembed' ),
+            'label' => __( 'Facebook Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class facebook_addon extends Widget_Base {
     $this->add_control(
         'facebook_link',
         [
-            'label' => esc_html__( 'facebook Link', 'allembed' ),
+            'label' => esc_html__( 'Facebook Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class facebook_addon extends Widget_Base {
 
     $this->start_controls_section(
         'facebook_ttabb', [
-            'label' =>esc_html__( 'facebook Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Facebook Other Settings', 'allembed' ),
         ]
     );
 

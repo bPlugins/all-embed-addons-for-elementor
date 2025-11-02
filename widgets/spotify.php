@@ -87,7 +87,7 @@ class spotify_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_spotify',
         [
-            'label' => __( 'spotify Player Content Settings', 'allembed' ),
+            'label' => __( 'Spotify Player Content Settings', 'allembed' ),
              
            
         ]

@@ -87,7 +87,7 @@ class linkedin_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_linkedin',
         [
-            'label' => __( 'linkedin Content Settings', 'allembed' ),
+            'label' => __( 'Linkedin Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class linkedin_addon extends Widget_Base {
     $this->add_control(
         'linkedin_link',
         [
-            'label' => esc_html__( 'linkedin Link', 'allembed' ),
+            'label' => esc_html__( 'Linkedin Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class linkedin_addon extends Widget_Base {
 
     $this->start_controls_section(
         'linkedin_ttabb', [
-            'label' =>esc_html__( 'linkedin Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Linkedin Other Settings', 'allembed' ),
         ]
     );
 

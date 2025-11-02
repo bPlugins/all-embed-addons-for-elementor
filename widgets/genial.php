@@ -87,7 +87,7 @@ class genial_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_genial',
         [
-            'label' => __( 'genial Content Settings', 'allembed' ),
+            'label' => __( 'Genial Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class genial_addon extends Widget_Base {
     $this->add_control(
         'genial_link',
         [
-            'label' => esc_html__( 'genial Link', 'allembed' ),
+            'label' => esc_html__( 'Genial Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class genial_addon extends Widget_Base {
 
     $this->start_controls_section(
         'genial_ttabb', [
-            'label' =>esc_html__( 'genial Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Genial Other Settings', 'allembed' ),
         ]
     );
 

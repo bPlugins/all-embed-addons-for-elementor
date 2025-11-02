@@ -87,7 +87,7 @@ class pinterest_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_codepen',
         [
-            'label' => __( 'pinterest Content Settings', 'allembed' ),
+            'label' => __( 'Pinterest Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class pinterest_addon extends Widget_Base {
     $this->add_control(
         'pinterest_link',
         [
-            'label' => esc_html__( 'pinterest Link', 'allembed' ),
+            'label' => esc_html__( 'Pinterest Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class pinterest_addon extends Widget_Base {
 
     $this->start_controls_section(
         'pinterest_ttabb', [
-            'label' =>esc_html__( 'pinterest Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Pinterest Other Settings', 'allembed' ),
         ]
     );
 

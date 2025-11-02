@@ -87,7 +87,7 @@ class dartfish_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_dartfish',
         [
-            'label' => __( 'dartfish Player Content Settings', 'allembed' ),
+            'label' => __( 'Dartfish Player Content Settings', 'allembed' ),
              
            
         ]

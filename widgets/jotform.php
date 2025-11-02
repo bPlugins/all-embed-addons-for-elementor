@@ -87,7 +87,7 @@ class jotform_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_jotform',
         [
-            'label' => __( 'jotform Content Settings', 'allembed' ),
+            'label' => __( 'Jotform Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class jotform_addon extends Widget_Base {
     $this->add_control(
         'jotform_link',
         [
-            'label' => esc_html__( 'Video Link', 'allembed' ),
+            'label' => esc_html__( 'Jotform Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class jotform_addon extends Widget_Base {
 
     $this->start_controls_section(
         'jotform_ttabb', [
-            'label' =>esc_html__( 'jotform Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Jotform Other Settings', 'allembed' ),
         ]
     );
 

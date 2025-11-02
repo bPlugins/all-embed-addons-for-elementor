@@ -87,7 +87,7 @@ class bandcamp_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_bandcamp',
         [
-            'label' => __( 'bandcamp Content Settings', 'allembed' ),
+            'label' => __( 'Bandcamp Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class bandcamp_addon extends Widget_Base {
     $this->add_control(
         'bandcamp_link',
         [
-            'label' => esc_html__( 'bandcamp Link', 'allembed' ),
+            'label' => esc_html__( 'Bandcamp Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class bandcamp_addon extends Widget_Base {
 
     $this->start_controls_section(
         'bandcamp_ttabb', [
-            'label' =>esc_html__( 'bandcamp Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Bandcamp Other Settings', 'allembed' ),
         ]
     );
 

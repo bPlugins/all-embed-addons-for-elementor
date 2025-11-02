@@ -87,7 +87,7 @@ class imgur_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_imgur',
         [
-            'label' => __( 'imgur Content Settings', 'allembed' ),
+            'label' => __( 'Imgur Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class imgur_addon extends Widget_Base {
     $this->add_control(
         'imgur_link',
         [
-            'label' => esc_html__( 'imgur Link', 'allembed' ),
+            'label' => esc_html__( 'Imgur Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class imgur_addon extends Widget_Base {
 
     $this->start_controls_section(
         'imgur_ttabb', [
-            'label' =>esc_html__( 'imgur Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Imgur Other Settings', 'allembed' ),
         ]
     );
 

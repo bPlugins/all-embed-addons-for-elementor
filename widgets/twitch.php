@@ -87,7 +87,7 @@ class twitch_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_twitch',
         [
-            'label' => __( 'twitch Content Settings', 'allembed' ),
+            'label' => __( 'Twitch Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class twitch_addon extends Widget_Base {
     $this->add_control(
         'twitch_link',
         [
-            'label' => esc_html__( 'twitch Link', 'allembed' ),
+            'label' => esc_html__( 'Twitch Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class twitch_addon extends Widget_Base {
 
     $this->start_controls_section(
         'twitch_ttabb', [
-            'label' =>esc_html__( 'twitch Player Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Twitch Player Other Settings', 'allembed' ),
         ]
     );
 

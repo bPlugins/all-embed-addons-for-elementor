@@ -87,7 +87,7 @@ class invison_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_invison',
         [
-            'label' => __( 'invison Content Settings', 'allembed' ),
+            'label' => __( 'Invision Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class invison_addon extends Widget_Base {
     $this->add_control(
         'invison_link',
         [
-            'label' => esc_html__( 'Video Link', 'allembed' ),
+            'label' => esc_html__( 'Invision Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class invison_addon extends Widget_Base {
 
     $this->start_controls_section(
         'invison_ttabb', [
-            'label' =>esc_html__( 'invison Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Invision Other Settings', 'allembed' ),
         ]
     );
 

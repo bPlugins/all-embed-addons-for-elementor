@@ -15,8 +15,8 @@ Easily embed a variety of content into your Elementor designs with versatile wid
 
 == Description ==
 
-All Embed Addon for Elementor enhances your Elementor experience by allowing you to embed content from multiple platforms directly into your pages. Each widget is designed to be user-friendly, fully customizable, and responsive.
-
+[**All Embed Addon for Elementor**](https://bplugins.com/products/all-embed-addons-for-elementor/) enhances your Elementor experience by allowing you to embed content from multiple platforms directly into your pages. Each widget is designed to be user-friendly, fully customizable, and responsive.
+[**Support**](https://bplugins.com/support/) | [**Demo**](https://bplugins.com/products/all-embed-addons-for-elementor/)
 **Features include:**
 - Seamless integration with Elementor.
 - Widgets for video, audio, social media, and interactive content.
@@ -58,7 +58,7 @@ Select “Upload Plugin”
 After Install The Plugin, Just Active It And Use it Smoothly
 
 
-Note: This plugin works with Elementor. Make sure you have [Elementor](https://wordpress.org/plugins/elementor/) installed.
+Note: This plugin works with Elementor. Make sure you have [**Elementor**](https://wordpress.org/plugins/elementor/) installed.
 
 e.g.
 
@@ -71,7 +71,7 @@ e.g.
 - Online document: https://elementoraddons.org/docs/documentation/
 
 = Feedback = 
-Liked that plugin? Hate it? Want a new feature?  [Send me some feedback](mailto: support@bplugins.com "Send feedback") 
+Liked that plugin? Hate it? Want a new feature?  [**Send me some feedback**](mailto: support@bplugins.com "Send feedback") 
  
  
 = ⭐ Checkout our other WordPress Plugins- = 
@@ -94,7 +94,7 @@ Liked that plugin? Hate it? Want a new feature?  [Send me some feedback](mailto:
 5. All Embed Widgets
 6. Spotify Embed
 7. Facebook Embed
-8. Kulla Embed
+8. Kuula Embed
 9. Reddit Embed and Settings Control
 
 == Changelog ==

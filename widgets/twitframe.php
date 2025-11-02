@@ -87,7 +87,7 @@ class twitframe_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_twitframe',
         [
-            'label' => __( 'twitframe Content Settings', 'allembed' ),
+            'label' => __( 'Twitframe Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class twitframe_addon extends Widget_Base {
     $this->add_control(
         'twitframe_link',
         [
-            'label' => esc_html__( 'twitframe Link', 'allembed' ),
+            'label' => esc_html__( 'Twitframe Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class twitframe_addon extends Widget_Base {
 
     $this->start_controls_section(
         'twitframe_ttabb', [
-            'label' =>esc_html__( 'twitframe Player Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Twitframe Player Other Settings', 'allembed' ),
         ]
     );
 

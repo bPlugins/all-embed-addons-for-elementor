@@ -96,7 +96,7 @@ class soundcloud_addon extends Widget_Base {
     $this->add_control(
         'soundcloud_link',
         [
-            'label' => esc_html__( 'Video Link', 'allembed' ),
+            'label' => esc_html__( 'Soundcloud Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),

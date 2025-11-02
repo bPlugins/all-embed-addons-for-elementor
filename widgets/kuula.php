@@ -87,7 +87,7 @@ class kuula_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_kuula',
         [
-            'label' => __( 'kuula Content Settings', 'allembed' ),
+            'label' => __( 'Kuula Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class kuula_addon extends Widget_Base {
     $this->add_control(
         'kuula_link',
         [
-            'label' => esc_html__( 'kuula Link', 'allembed' ),
+            'label' => esc_html__( 'Kuula Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class kuula_addon extends Widget_Base {
 
     $this->start_controls_section(
         'kuula_ttabb', [
-            'label' =>esc_html__( 'kuula Other Settings', 'allembed' ),
+            'label' =>esc_html__( 'Kuula Other Settings', 'allembed' ),
         ]
     );
 

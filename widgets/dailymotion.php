@@ -37,7 +37,7 @@ class dailymotion_addon extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return esc_html__( 'dailymotion Embed', 'allembed' );
+		return esc_html__( 'Dailymotion Embed', 'allembed' );
 	}
 
 	/**
@@ -87,7 +87,7 @@ class dailymotion_addon extends Widget_Base {
     $this->start_controls_section(
         '_section_dailymotion',
         [
-            'label' => __( 'dailymotion Content Settings', 'allembed' ),
+            'label' => __( 'Dailymotion Content Settings', 'allembed' ),
              
            
         ]
@@ -96,7 +96,7 @@ class dailymotion_addon extends Widget_Base {
     $this->add_control(
         'dailymotion_link',
         [
-            'label' => esc_html__( 'dailymotion Link', 'allembed' ),
+            'label' => esc_html__( 'Dailymotion Link', 'allembed' ),
             'label_block' => true,
             'type' => Controls_Manager::TEXT,
             'placeholder' => esc_html__( 'https://your-link.com', 'allembed' ),
@@ -109,7 +109,7 @@ class dailymotion_addon extends Widget_Base {
     $this->start_controls_section(
             'section_content_setting',
             [
-                'label' => esc_html__( 'dailymotion Other Settings', 'allembed' ),
+                'label' => esc_html__( 'Dailymotion Other Settings', 'allembed' ),
             ]
         );
 		$this->add_control(
