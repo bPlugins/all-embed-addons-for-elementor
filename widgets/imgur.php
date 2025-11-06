@@ -113,7 +113,7 @@ class imgur_addon extends Widget_Base {
         ]
     );
 
-          $this->add_control(
+        $this->add_control(
 			'width',
 			[
 				'label' 		=> esc_html__( 'Width', 'allembed' ),
@@ -136,7 +136,35 @@ class imgur_addon extends Widget_Base {
 					'size' => 600,
 				],
 				'selectors' => [
-					'{{WRAPPER}} .imgr iframe' => 'max-width: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .imgr' => 'width: {{SIZE}}{{UNIT}}',
+				],
+			]
+		);
+
+		$this->add_control(
+			'height',
+			[
+				'label' 		=> esc_html__( 'Height', 'allembed' ),
+				'type' 			=> Controls_Manager::SLIDER,
+				'size_units' 	=> [ '%', 'px' ],
+				'range' 		=> 
+				[
+					'px' => [
+						'min' 	=> 0,
+						'max' 	=> 1500,
+						'step' 	=> 5,
+					],
+					'%' => [
+						'min' 	=> 0,
+						'max' 	=> 100,
+					],
+				],
+				'default' => [
+					'unit' => 'px',
+					'size' => 600,
+				],
+				'selectors' => [
+					'{{WRAPPER}} .imgr' => 'height: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -161,8 +189,10 @@ class imgur_addon extends Widget_Base {
 	
 	?>
 
-	<div class="imgr">
-  	<blockquote class="imgur-embed-pub" lang="en" data-id="a/<?php echo esc_url($imgur_link); ?>"><a href="//imgur.com/a/<?php echo esc_attr($imgur_link); ?>"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script></div>
+	<div class="imgr" style="overflow-y: auto;">
+		<blockquote class="imgur-embed-pub" lang="en" data-id="a/<?php echo esc_url($imgur_link); ?>"><a href="//imgur.com/a/<?php echo esc_attr($imgur_link); ?>"></a></blockquote>
+		<script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+	</div>
 
 	<?php
 	}

@@ -164,7 +164,7 @@ class twitframe_addon extends Widget_Base {
 					'size' => 750,
 				],
 				'selectors' => [
-					'{{WRAPPER}} .twit iframe' => 'height: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .twit' => 'height: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -205,7 +205,15 @@ class twitframe_addon extends Widget_Base {
 		} else {
 			// Official Twitter Embed format
 			?>
-			<div class="twit">
+			<style> 
+				.twitter-tweet  {
+					max-width: 100% !important;
+				}
+				.css-1dbjc4n {
+					max-width: 100% !important;
+				}
+			</style>
+			<div class="twit" style="overflow-y: auto;">
 				<blockquote class="twitter-tweet">
 					<a href="<?php echo esc_url( $twitframe_link ); ?>"></a>
 				</blockquote>

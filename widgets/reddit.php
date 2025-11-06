@@ -136,7 +136,7 @@ class reddit_addon extends Widget_Base {
 					'size' => 600,
 				],
 				'selectors' => [
-					'{{WRAPPER}} .redditt iframe' => 'max-width: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .reddit-app-wrapper' => 'width: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -164,7 +164,7 @@ class reddit_addon extends Widget_Base {
 					'size' => 460,
 				],
 				'selectors' => [
-					'{{WRAPPER}} .redditt iframe' => 'height: {{SIZE}}{{UNIT}}',
+					'{{WRAPPER}} .reddit-app-wrapper' => 'height: {{SIZE}}{{UNIT}}',
 				],
 			]
 		);
@@ -190,9 +190,11 @@ class reddit_addon extends Widget_Base {
 		echo '<iframe src="'.esc_url($reddit_link).'" sandbox="allow-scripts allow-same-origin allow-popups" scrolling="no"></iframe>';
 	} else {
 		?>
-		<blockquote class="reddit-embed-bq" data-embed-height="316">
-			<a href="<?php echo esc_url($reddit_link); ?>"></a>
-		</blockquote>
+		<div class="reddit-app-wrapper" style = "overflow-y: auto;">
+			<blockquote class="reddit-embed-bq" style="height:200px" data-embed-height="316">
+				<a href="<?php echo esc_url($reddit_link); ?>"></a>
+			</blockquote>
+		</div>
 		<script async src="https://embed.reddit.com/widgets.js" charset="UTF-8"></script>
 		<?php
 	}
