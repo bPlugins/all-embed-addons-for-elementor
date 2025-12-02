@@ -21,7 +21,7 @@ Easily embed a variety of content into your Elementor designs with versatile wid
 - Seamless integration with Elementor.
 - Widgets for video, audio, social media, and interactive content.
 - Fully responsive embeds for all screen sizes.
-- Supports over 20 popular platforms.
+- Supports over 24 popular platforms.
 
 **Available Widgets:**
 1. **YouTube Embed**: Add YouTube videos to your pages with ease.  
