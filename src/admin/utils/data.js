@@ -33,6 +33,13 @@ export const dashboardInfo = (info) => {
 
 export const changelogs = [
 	{
+		version: '1.1.5',
+		list: [
+			'Fixed TwitFrame Embedder Error',
+			'Fixed Redit Embedder Error'
+		]
+	},
+	{
 		version: '1.1.4',
 		list: [
 			'fixed Cross Site Scripting (XSS)'

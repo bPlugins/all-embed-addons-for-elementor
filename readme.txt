@@ -5,7 +5,7 @@ Contributors: bplugins, shehabulislam, hazrath
 Tags: elementor, elementor addon, embed, video, youtube
 Requires at least: 4.3
 Tested up to: 6.9
-Stable tag: 1.1.4
+Stable tag: 1.1.5
 Requires PHP: 7.1
 Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv2 or later
@@ -21,7 +21,7 @@ This addon gives you a collection of powerful, ready-to-use widgets that support
 
 ==== Check our overview and demos 👇 ====
 
-[**All Embed Addons for Elementor – Demo & Info**](https://bplugins.com/products/all-embed-addons-for-elementor/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bplugins.com/products/all-embed-addons-for-elementor/)
+[**All Embed Addons for Elementor – Info**](https://bplugins.com/products/all-embed-addons-for-elementor/) | [**Documentation**](https://bplugins.com/docs/all-embed-addons-for-elementor/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bplugins.com/products/all-embed-addons-for-elementor/)
 
 === Why Use All Embed Addons? ===
 
@@ -171,6 +171,10 @@ Visit: https://bplugins.com/support/
 9. Reddit Embed and Settings Control
 
 == Changelog ==
+
+= 1.1.5 =
+* Fixed TwitFrame Embedder Error
+* Fixed Redit Embedder Error
 
 = 1.1.4 =
 * fixed Cross-Site Scripting (XSS)

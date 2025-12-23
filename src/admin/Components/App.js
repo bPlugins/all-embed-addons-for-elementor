@@ -2,8 +2,6 @@ import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 
 import ListDemos from '../../../../bpl-tools/Admin/Demos/ListDemos';
 import FSCheckoutButton from '../../../..//bpl-tools/Admin/FSCheckoutButton/FSCheckoutButton';
-// import FilterDemos from '../../../..//bpl-tools/Admin/Demos/FilterDemos';
-// import Pricing from '../../../..//bpl-tools/Admin/Pricing/Pricing';
 import Blocks from '../../../..//bpl-tools/Admin/Blocks/Blocks';
 // import FeatureCompare from '../../../../bpl-tools/Admin/FeatureCompare/FeatureCompare';
 
