@@ -71,7 +71,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-25-linkedin-embed/'
+			url: 'https://elementor.bplugins.com/demo/linkedin-embed/'
 		},
 		{
 			icon: '',
@@ -79,7 +79,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-23-facebook-embed/'
+			url: 'https://elementor.bplugins.com/demo/facebook-embed/'
 		},
 		{
 			icon: '',
@@ -87,7 +87,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-24-pinterest-embed/'
+			url: 'https://elementor.bplugins.com/demo/pinterest-embed/'
 		},
 		{
 			icon: '',
@@ -95,7 +95,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-22-kuula-embed/'
+			url: 'https://elementor.bplugins.com/demo/kuula-embed/'
 		},
 		{
 			icon: '',
@@ -103,7 +103,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-20-sirv-embed/'
+			url: 'https://elementor.bplugins.com/demo/sirv-embed/'
 		},
 		{
 			icon: '',
@@ -111,7 +111,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-21-mixcloud-player/'
+			url: 'https://elementor.bplugins.com/demo/mixcloud-embed/'
 		},
 		{
 			icon: '',
@@ -119,7 +119,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-17-dartfish-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/dartfish-embed/'
 		},
 		{
 			icon: '',
@@ -127,7 +127,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-16-dailymotion-embed/'
+			url: 'https://elementor.bplugins.com/demo/daily-motion-embed/'
 		},
 		{
 			icon: '',
@@ -135,7 +135,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-15-bandcamp-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/bandcamp-embed/'
 		},
 		{
 			icon: '',
@@ -143,7 +143,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-12-codepen-embed/'
+			url: 'https://elementor.bplugins.com/demo/codepen-embed/'
 		},
 		{
 			icon: '',
@@ -151,7 +151,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-8-spotify-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/spotify-embed/'
 		},
 		{
 			icon: '',
@@ -159,7 +159,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-7-appointly-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/appointly-embed/'
 		},
 		{
 			icon: '',
@@ -167,7 +167,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-9-giphy-embed/'
+			url: 'https://elementor.bplugins.com/demo/giphy-embed/'
 		},
 		{
 			icon: '',
@@ -175,7 +175,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-1-youtube-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/youtube-embed/'
 		},
 		{
 			icon: '',
@@ -183,7 +183,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-2-vimeo-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/vimeo-embed/'
 		},
 		{
 			icon: '',
@@ -191,7 +191,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-3-soundcloud-embed-player/'
+			url: 'https://elementor.bplugins.com/demo/soundcloud-embed/'
 		},
 		{
 			icon: '',
@@ -199,7 +199,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-5-jotform-embed-form/'
+			url: 'https://elementor.bplugins.com/demo/jotform-embed/'
 		},
 		{
 			icon: '',
@@ -207,7 +207,7 @@ export const demoInfo = {
 			description: '',
 			category: '',
 			type: 'iframe',
-			url: 'https://demo.bplugins.com/demo/demo-6-google-map-embed/'
+			url: 'https://elementor.bplugins.com/demo/google-map-embed/'
 		},
 	]
 }

@@ -187,5 +187,6 @@ Visit: https://bplugins.com/support/
 
 == Upgrade Notice ==
 
-= 1.1.4 =
-* fixed Cross-Site Scripting (XSS)
+= 1.1.5 =
+* Fixed TwitFrame Embedder Error
+* Fixed Redit Embedder Error

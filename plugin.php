@@ -17,7 +17,6 @@ use AllEmebdAddon\Widgets\twitframe_addon;
 use AllEmebdAddon\Widgets\bandcamp_addon;
 use AllEmebdAddon\Widgets\dailymotion_addon;
 use AllEmebdAddon\Widgets\dartfish_addon;
-use AllEmebdAddon\Widgets\creddle_addon;
 use AllEmebdAddon\Widgets\genial_addon;
 use AllEmebdAddon\Widgets\Sirv_addon;
 use AllEmebdAddon\Widgets\mixcloud_addon;
