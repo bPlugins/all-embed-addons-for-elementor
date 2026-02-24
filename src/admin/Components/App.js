@@ -60,7 +60,7 @@ const App = (props) => {
 
 				<Route path='welcome' element={<Welcome {...props} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
 
-				<Route path='widgets' element={<Blocks {...props} allBlocks={blocks} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
+				<Route path='widgets' element={<Blocks {...props} pageTitle = 'All Widgets' allBlocks={blocks} disabledBlocks={data} status={internalStatus} onChange={saveToBackend} />} />
 
 				<Route path='demos' element={<Demos demoInfo={demoInfo} {...props} />} />
 

@@ -818,7 +818,8 @@ const Blocks = props => {
     onChange,
     allBlocks,
     status,
-    ProModal = null
+    ProModal = null,
+    pageTitle = 'All Blocks'
   } = props;
   const publishedBlocks = allBlocks.filter(b => 'published' === b.status || !b.status);
   const [isSaving, setIsSaving] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
@@ -929,11 +930,11 @@ const Blocks = props => {
     type: toast.type
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "blocksTop"
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, "All Blocks"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", null, pageTitle), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "blocksSearch"
   }, _utils_icons__WEBPACK_IMPORTED_MODULE_3__.searchIcon, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     type: "text",
-    placeholder: "Search blocks...",
+    placeholder: "Search...",
     value: searchTerm,
     onChange: e => setSearchTerm(e.target.value),
     className: "search-input"
@@ -14293,6 +14294,7 @@ const App = props => {
     path: "widgets",
     element: (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_bpl_tools_Admin_Blocks__WEBPACK_IMPORTED_MODULE_2__["default"], {
       ...props,
+      pageTitle: "All Widgets",
       allBlocks: _utils_blocks__WEBPACK_IMPORTED_MODULE_10__["default"],
       disabledBlocks: data,
       status: internalStatus,
