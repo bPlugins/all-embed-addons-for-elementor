@@ -1,23 +1,25 @@
-import Overview from '../../../../bpl-tools/Admin/Overview/Overview';
-import Changelog from '../../../../bpl-tools/Admin/Changelog/Changelog';
-import FSCheckoutButton from '../../../../bpl-tools/Admin/FSCheckoutButton/FSCheckoutButton';
-
-import { changelogs } from '../utils/data';
+import Overview from '../../../../bpl-tools/Admin/Overview';
+import Changelog from '../../../../bpl-tools/Admin/Changelog';
+import ProAds from '../../../../bpl-tools/Admin/ProAds';
+import Card from '../../../../bpl-tools/Admin/Blocks/Card';
+import blocks from '../utils/blocks';
 
 const Welcome = (props) => {
-	const { name, isPremium, freemius } = props;
+	const { isPremium, disabledBlocks, status, onChange } = props;
+	
+	
+	return <Overview {...props}>
+		<Card {...props} allBlocks={blocks} cardTitle = 'Widgets' seeAllLink = '#widgets' disabledBlocks={disabledBlocks} status={status} onChange={onChange} />
 
-	return <>
-		<Overview {...props}>
-			{/* {!isPremium && <FSCheckoutButton {...{
-				link :"/wp-admin/admin.php?page=all-embed-addons-for-elementor#/pricing",
-				freemius,
-				options: { title: name },
-				buttonProps: { variant: 'secondary' }
-			}}>Buy Now</FSCheckoutButton>} */}
-		</Overview>
+		<div style={{
+			display: 'grid',
+			gridTemplateColumns: isPremium ? '1fr' : 'repeat(auto-fill, minmax(min(480px, 100%), 1fr))',
+			gap: '32px'
+		}}>
+			<Changelog {...props} />
 
-		<Changelog changelogs={changelogs} {...props} />
-	</>
+			{!isPremium && <ProAds {...props} />}
+		</div>
+	</Overview>
 }
 export default Welcome;

@@ -58,7 +58,10 @@ if(!class_exists("AEAFEAdminMenu")) {
 				data-info='<?php echo esc_attr( wp_json_encode( [
 					'version' => AEAFE_VERSION,
 					'nonce' => wp_create_nonce( 'bptb_admin_nonce' ),
-					'isPremium' => aeafeIsPremium(),
+					// 'isPremium' => aeafeIsPremium(),
+					'isPremium' => true,
+					'hasPro' => false,
+					'action' => 'bptbGetBlocks'
 				] ) ); ?>'
 			></div>
 		<?php }

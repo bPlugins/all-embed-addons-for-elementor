@@ -1,7 +1,6 @@
 import { createRoot } from 'react-dom/client';
 
 import './dashboard.scss';
-import "../../../bpl-tools/Admin/style.scss";
 import App from './Components/App';
 import { dashboardInfo } from './utils/data';
 
