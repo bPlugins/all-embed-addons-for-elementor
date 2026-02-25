@@ -1,3 +1,5 @@
+import { VimeoIcon, youTubeIcon, soundCloudIcon, slideShareIcon, dartfishIcon, sirvIcon, redditIcon, geniallyIcon, linedInIcon, pinterestIcon, facebookIcon, bandcampIcon, mixcloudIcon, kuulaIcon, dailyMotionIcon, twitchIcon, twitframeIcon, codepenIcon, invisionIcon, jotFormIcon,appointlyIcon, imgurIcon, giphyIcon, spotifyIcon, googleMapIcon } from './blocksIcon';
+
 const slug = 'all-embed-addons-for-elementor';
 
 export const dashboardInfo = (info) => {
@@ -43,7 +45,15 @@ export const dashboardInfo = (info) => {
 		// ],
 		changelogs: [
 			{
+				version: '1.1.6 - 25 Feb 2026',
+				type: 'update',
+				list: [
+					'Update Admin Dashboard',
+				]
+			},
+			{
 				version: '1.1.5',
+				type: 'update',
 				list: [
 					'Fixed TwitFrame Embedder Error',
 					'Fixed Redit Embedder Error'
@@ -51,18 +61,21 @@ export const dashboardInfo = (info) => {
 			},
 			{
 				version: '1.1.4',
+				type: 'fix',
 				list: [
-					'fixed Cross Site Scripting (XSS)'
+					'Fixed Cross Site Scripting (XSS)'
 				]
 			},
 			{
 				version: '1.1.2',
+				type: 'fix',
 				list: [
-					'fixed deprecated error'
+					'Fixed deprecated error'
 				]
 			},
 			{
 				version: '1.0.0',
+				type: 'new',
 				list: [
 					'Initaial release'
 				]
@@ -79,7 +92,7 @@ export const demoInfo = {
 	allInOneLink: 'https://bplugins.com/products/all-embed-addons-for-elementor/#demos',
 	demos: [
 		{
-			icon: '',
+			icon: linedInIcon,
 			title: 'Linkedin Embed',
 			description: '',
 			category: '',
@@ -87,7 +100,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/linkedin-embed/'
 		},
 		{
-			icon: '',
+			icon: facebookIcon,
 			title: 'Facebook Embed',
 			description: '',
 			category: '',
@@ -95,7 +108,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/facebook-embed/'
 		},
 		{
-			icon: '',
+			icon: pinterestIcon,
 			title: 'Pinterest Embed',
 			description: '',
 			category: '',
@@ -103,7 +116,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/pinterest-embed/'
 		},
 		{
-			icon: '',
+			icon: kuulaIcon,
 			title: 'Kuula Embed',
 			description: '',
 			category: '',
@@ -111,7 +124,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/kuula-embed/'
 		},
 		{
-			icon: '',
+			icon: sirvIcon,
 			title: 'Sirv Embed',
 			description: '',
 			category: '',
@@ -119,7 +132,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/sirv-embed/'
 		},
 		{
-			icon: '',
+			icon: mixcloudIcon,
 			title: 'Mixcloud Embed',
 			description: '',
 			category: '',
@@ -127,7 +140,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/mixcloud-embed/'
 		},
 		{
-			icon: '',
+			icon: dartfishIcon,
 			title: 'Dartfish Embed',
 			description: '',
 			category: '',
@@ -135,7 +148,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/dartfish-embed/'
 		},
 		{
-			icon: '',
+			icon: dailyMotionIcon,
 			title: 'Dailymotion Embed',
 			description: '',
 			category: '',
@@ -143,7 +156,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/daily-motion-embed/'
 		},
 		{
-			icon: '',
+			icon: bandcampIcon,
 			title: 'Bandcamp Embed',
 			description: '',
 			category: '',
@@ -151,7 +164,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/bandcamp-embed/'
 		},
 		{
-			icon: '',
+			icon: codepenIcon,
 			title: 'Codepen Embed',
 			description: '',
 			category: '',
@@ -159,7 +172,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/codepen-embed/'
 		},
 		{
-			icon: '',
+			icon: spotifyIcon,
 			title: 'Spotify Embed',
 			description: '',
 			category: '',
@@ -167,7 +180,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/spotify-embed/'
 		},
 		{
-			icon: '',
+			icon: appointlyIcon,
 			title: 'Appointly Embed',
 			description: '',
 			category: '',
@@ -175,7 +188,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/appointly-embed/'
 		},
 		{
-			icon: '',
+			icon: giphyIcon,
 			title: 'Giphy Embed',
 			description: '',
 			category: '',
@@ -183,7 +196,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/giphy-embed/'
 		},
 		{
-			icon: '',
+			icon: youTubeIcon,
 			title: 'YouTube Embed',
 			description: '',
 			category: '',
@@ -191,7 +204,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/youtube-embed/'
 		},
 		{
-			icon: '',
+			icon: VimeoIcon,
 			title: 'Vimeo Embed',
 			description: '',
 			category: '',
@@ -199,7 +212,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/vimeo-embed/'
 		},
 		{
-			icon: '',
+			icon: soundCloudIcon,
 			title: 'Soundcloud Embed',
 			description: '',
 			category: '',
@@ -207,7 +220,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/soundcloud-embed/'
 		},
 		{
-			icon: '',
+			icon: jotFormIcon,
 			title: 'JotForm Embed',
 			description: '',
 			category: '',
@@ -215,7 +228,7 @@ export const demoInfo = {
 			url: 'https://elementor.bplugins.com/demo/jotform-embed/'
 		},
 		{
-			icon: '',
+			icon: googleMapIcon,
 			title: 'Google Map Embed',
 			description: '',
 			category: '',

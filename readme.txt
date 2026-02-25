@@ -5,7 +5,7 @@ Contributors: bplugins, shehabulislam, hazrath
 Tags: elementor, elementor addon, embed, video, youtube
 Requires at least: 4.4
 Tested up to: 6.9
-Stable tag: 1.1.5
+Stable tag: 1.1.6
 Requires PHP: 7.1
 Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv2 or later
@@ -171,6 +171,9 @@ Visit: https://bplugins.com/support/
 9. Reddit Embed and Settings Control
 
 == Changelog ==
+
+= 1.1.6 - 25 Feb 2026 =
+* Update Admin Dashboard
 
 = 1.1.5 =
 * Fixed TwitFrame Embedder Error

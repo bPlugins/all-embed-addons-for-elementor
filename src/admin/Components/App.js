@@ -70,7 +70,7 @@ const App = (props) => {
 
 				{hasPro && <Route path='activation' element={<Activation {...props} />} />}
 
-				<Route path='our-plugins' element={<OurPlugins {...props} />} />
+				<Route path='our-plugins' element={<OurPlugins {...props} slugs={['3d-viewer', 'html5-video-player', 'document-embedder-addons-for-elementor', 'html5-audio-player', 'media-player-addons-for-elementor', 'pdf-poster', 'document-emberdder', 'advanced-post-block', 'b-carousel-block', 'b-blocks', 'html5-video-player']} />} />
 
 				<Route path='*' element={<Navigate to='/welcome' replace />} />
 			</Route>

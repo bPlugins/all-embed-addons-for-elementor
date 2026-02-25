@@ -14314,7 +14314,8 @@ const App = props => {
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
     path: "our-plugins",
     element: (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_bpl_tools_Admin_OurPlugins__WEBPACK_IMPORTED_MODULE_7__["default"], {
-      ...props
+      ...props,
+      slugs: ['3d-viewer', 'html5-video-player', 'document-embedder-addons-for-elementor', 'html5-audio-player', 'media-player-addons-for-elementor', 'pdf-poster', 'document-emberdder', 'advanced-post-block', 'b-carousel-block', 'b-blocks', 'html5-video-player']
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Route, {
     path: "*",
@@ -14477,157 +14478,157 @@ __webpack_require__.r(__webpack_exports__);
 const pluginSlug = 'all-embed-addons-for-elementor';
 const siteURL = 'https://elementor.bplugins.com';
 const demoLink = `${siteURL}/demo`;
-const docsURL = `${siteURL}/docs`;
+const docsURL = `https://bplugins.com/docs/all-embed-addons-for-elementor/widget-guides/`;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   name: `bae_youtube_addon`,
   title: 'YouTube Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.youTubeIcon,
   demo: `${demoLink}/youtube-embed/`,
-  docs: ``
+  docs: `${docsURL}`
 }, {
   name: `bae_vimeo_addon`,
   title: 'Vimeo Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.VimeoIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/vimeo-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_soundcloud`,
   title: 'Sound Cloud Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.soundCloudIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/soundcloud-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_invison`,
   title: 'Invision Emberder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.invisionIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/invision-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_jotform`,
   title: 'JotForm Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.jotFormIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/jotform-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_google_map`,
   title: 'Google Map Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.googleMapIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/google-map-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_appointly`,
   title: 'Appointly Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.appointlyIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/appointly-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_spotify`,
   title: 'Spotify Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.spotifyIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/spotify-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_giphy`,
   title: 'Giphy Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.giphyIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/giphy-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_imgur`,
   title: 'Imgur Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.imgurIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/imgur-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_slideshare`,
   title: 'Slide Share Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.slideShareIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/slideshare-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_codepen`,
   title: 'Codepen Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.codepenIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/codepen-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_twitch`,
   title: 'Twitch Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.twitchIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/twitch-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_twitframe`,
   title: 'Twitframe Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.twitframeIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/twitframe-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_bandcamp`,
   title: 'Bandcamp Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.bandcampIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/bandcamp-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_dailymotion`,
   title: 'Daily Motion Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.dailyMotionIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/dailymotion-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_dartfish`,
   title: 'Dartfish Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.dartfishIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/dartfish-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_genial`,
   title: 'Genially Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.geniallyIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/genially-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_sirv`,
   title: 'Sirv Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.sirvIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/sirv-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_mixcloud`,
   title: 'Mixcloud Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.mixcloudIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/mixcloud-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_kuula`,
   title: 'Kuula Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.kuulaIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/kuula-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_facebook`,
   title: 'Facebook Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.facebookIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/facebook-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_pinterest`,
   title: 'Pinterest Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.pinterestIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/pinterest-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_linkedin`,
   title: 'Linkedin Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.linedInIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/linkedin-embed/`,
+  docs: `${docsURL}`
 }, {
   name: `bae_reddit`,
   title: 'Reddit Embeder',
   icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.redditIcon,
-  demo: ``,
-  docs: ``
+  demo: `${demoLink}/reddit-embed/`,
+  docs: `${docsURL}`
 }]);
 
 /***/ }),
@@ -15162,6 +15163,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   demoInfo: () => (/* binding */ demoInfo),
 /* harmony export */   pricingInfo: () => (/* binding */ pricingInfo)
 /* harmony export */ });
+/* harmony import */ var _blocksIcon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./blocksIcon */ "./src/admin/utils/blocksIcon.js");
+
 const slug = 'all-embed-addons-for-elementor';
 const dashboardInfo = info => {
   const {
@@ -15207,16 +15210,24 @@ const dashboardInfo = info => {
     // 	''
     // ],
     changelogs: [{
+      version: '1.1.6 - 25 Feb 2026',
+      type: 'update',
+      list: ['Update Admin Dashboard']
+    }, {
       version: '1.1.5',
+      type: 'update',
       list: ['Fixed TwitFrame Embedder Error', 'Fixed Redit Embedder Error']
     }, {
       version: '1.1.4',
-      list: ['fixed Cross Site Scripting (XSS)']
+      type: 'fix',
+      list: ['Fixed Cross Site Scripting (XSS)']
     }, {
       version: '1.1.2',
-      list: ['fixed deprecated error']
+      type: 'fix',
+      list: ['Fixed deprecated error']
     }, {
       version: '1.0.0',
+      type: 'new',
       list: ['Initaial release']
     }]
   };
@@ -15227,126 +15238,126 @@ const demoInfo = {
   allInOneLabel: 'See All Demo',
   allInOneLink: 'https://bplugins.com/products/all-embed-addons-for-elementor/#demos',
   demos: [{
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.linedInIcon,
     title: 'Linkedin Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/linkedin-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.facebookIcon,
     title: 'Facebook Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/facebook-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.pinterestIcon,
     title: 'Pinterest Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/pinterest-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.kuulaIcon,
     title: 'Kuula Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/kuula-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.sirvIcon,
     title: 'Sirv Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/sirv-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.mixcloudIcon,
     title: 'Mixcloud Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/mixcloud-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.dartfishIcon,
     title: 'Dartfish Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/dartfish-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.dailyMotionIcon,
     title: 'Dailymotion Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/daily-motion-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.bandcampIcon,
     title: 'Bandcamp Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/bandcamp-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.codepenIcon,
     title: 'Codepen Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/codepen-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.spotifyIcon,
     title: 'Spotify Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/spotify-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.appointlyIcon,
     title: 'Appointly Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/appointly-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.giphyIcon,
     title: 'Giphy Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/giphy-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.youTubeIcon,
     title: 'YouTube Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/youtube-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.VimeoIcon,
     title: 'Vimeo Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/vimeo-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.soundCloudIcon,
     title: 'Soundcloud Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/soundcloud-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.jotFormIcon,
     title: 'JotForm Embed',
     description: '',
     category: '',
     type: 'iframe',
     url: 'https://elementor.bplugins.com/demo/jotform-embed/'
   }, {
-    icon: '',
+    icon: _blocksIcon__WEBPACK_IMPORTED_MODULE_0__.googleMapIcon,
     title: 'Google Map Embed',
     description: '',
     category: '',

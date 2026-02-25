@@ -2,7 +2,7 @@
 /**
  * Plugin Name: All Embed Addons for elementor
  * Description: Collection of All types of Embed  files such as  YouTube, Vimeo and more....
- * Version:     1.1.5
+ * Version:     1.1.6
  * Author:      bPlugins
  * Author URI:  https://bPlugins.com
  * Text Domain: allembed
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( function_exists( 'aeafe_fs' ) ) {
         aeafe_fs()->set_basename( true, __FILE__ );
 } else {
-	define('AEAFE_VERSION', isset($_SERVER['HTTP_HOST']) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.5');
+	define('AEAFE_VERSION', isset($_SERVER['HTTP_HOST']) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.6');
 	define('AEAFE_DIR_URL', plugin_dir_url(__FILE__));
 	define('AEAFE_DIR_PATH', plugin_dir_path(__FILE__));
 	define('AEAFE_HAS_PRO', plugin_basename( __FILE__ ) === "all-embed-addons-for-elementor-pro/all-embed.php");
@@ -81,7 +81,7 @@ if ( function_exists( 'aeafe_fs' ) ) {
 		 * @since 1.2.0
 		 * @var string The plugin version.
 		 */
-		const VERSION = '1.1.4';
+		const VERSION = '1.1.6';
 
 		/**
 		 * Minimum Elementor Version
