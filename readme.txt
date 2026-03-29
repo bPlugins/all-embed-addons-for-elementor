@@ -3,7 +3,7 @@ Plugin Name: All Embed Elementor Addons
 Author URI: https://profiles.wordpress.org/bplugins/
 Contributors: bplugins, shehabulislam, hazrath
 Tags: elementor, elementor addon, embed, video, youtube
-Requires at least: 4.6
+Requires at least: 4.7
 Tested up to: 6.9
 Stable tag: 1.1.6
 Requires PHP: 7.1

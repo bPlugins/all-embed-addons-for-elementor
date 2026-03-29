@@ -581,9 +581,7 @@ const Block = ({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "blockTitle"
   }, title), isBlockPremium && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#pricing",
-    target: "_blank",
-    rel: "noopener noreferrer"
+    href: "#pricing"
   }, "Get Pro")), isLinks && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, demo && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     className: "actionBtn",
     href: demo,
@@ -668,20 +666,20 @@ const BlocksCard = props => {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (status === 'loading') {
       setToast({
-        message: 'Loading blocks...',
+        message: 'Loading...',
         type: 'loading'
       });
       setIsSaving(true);
     } else if (status === 'success') {
       setToast({
-        message: 'Blocks saved successfully!',
+        message: 'Saved successfully!',
         type: 'success'
       });
       setIsSaving(false);
       setTimeout(() => setToast(null), 3000);
     } else if (status === 'error') {
       setToast({
-        message: 'Failed to save blocks',
+        message: 'Failed to save',
         type: 'error'
       });
       setIsSaving(false);
@@ -838,20 +836,20 @@ const Blocks = props => {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (status === 'loading') {
       setToast({
-        message: 'Loading blocks...',
+        message: 'Loading...',
         type: 'loading'
       });
       setIsSaving(true);
     } else if (status === 'success') {
       setToast({
-        message: 'Blocks saved successfully!',
+        message: 'Saved successfully!',
         type: 'success'
       });
       setIsSaving(false);
       setTimeout(() => setToast(null), 3000);
     } else if (status === 'error') {
       setToast({
-        message: 'Failed to save blocks',
+        message: 'Failed to save',
         type: 'error'
       });
       setIsSaving(false);
@@ -1158,7 +1156,7 @@ const Demos = props => {
   } = demoInfo;
   const [activeDemo, setActiveDemo] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(demos[0]);
   const [activeIndex, setActiveIndex] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
-  const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   const [activeItem, setActiveItem] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(demoInfo.demos[0].children?.[0] || demoInfo.demos[0]);
   const [expandedId, setExpandedId] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(demoInfo.demos[0].title);
   const [searchQuery, setSearchQuery] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
@@ -1253,7 +1251,6 @@ const Demos = props => {
     } = item;
     const hasChildren = children && children.length > 0;
     const isExpanded = expandedId === title;
-    console.log(typeof icon);
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       key: index,
       className: "demoItem"
@@ -1330,7 +1327,6 @@ const Demos = props => {
   }), activeItem.type === 'iframe' ? (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("iframe", {
     src: activeItem.url,
     title: `${activeItem.title} Demo`,
-    loading: isLoading,
     onLoad: () => setIsLoading(false),
     sandbox: "allow-scripts allow-same-origin allow-popups allow-forms"
   }) : (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
