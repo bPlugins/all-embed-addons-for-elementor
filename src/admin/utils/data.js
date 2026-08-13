@@ -4,11 +4,12 @@ const slug = 'all-embed-addons-for-elementor';
 
 export const dashboardInfo = (info) => {
 	const { version, isPremium, hasPro } = info;
+	const adminUrl = info.adminUrl || window.ajaxurl?.split('admin-ajax.php')[0] || '';
 
 	const proSuffix = isPremium ? ' ' : '';
 
 	return {
-		name: `All Embed${proSuffix}`,
+		name: `All Embed Addons for Elementor ${proSuffix}`,
 		displayName: `All Embed${proSuffix} - Multi-Source Embed Widgets for Elementor.`,
 		description: 'All Embed Addon for Elementor enhances your Elementor experience by allowing you to embed content from multiple platforms directly into your pages. Each widget is designed to be user-friendly, fully customizable, and responsive.',
 		slug,
@@ -19,6 +20,7 @@ export const dashboardInfo = (info) => {
 		version,
 		isPremium,
 		hasPro,
+		adminUrl,
 		action: 'bptbGetBlocks',
 		displayOurPlugins: true,
 		pages: {
@@ -36,53 +38,117 @@ export const dashboardInfo = (info) => {
 			logo: `https://ps.w.org/${slug}/assets/icon-128x128.png`,
 			banner: `https://ps.w.org/${slug}/assets/banner-772x250.png`,
 			thumbnail: `https://bplugins.com/wp-content/uploads/2024/07/embed-docs-banner.png`,
-			proThumbnail: `https://bplugins.com/wp-content/themes/b-technologies/assets/images/products/${slug}-pro.png`,
+			//proThumbnail: `https://bplugins.com/wp-content/themes/b-technologies/assets/images/products/${slug}-pro.png`,
 			// video: 'https://www.youtube.com/watch?v=milYZrqLJsE',
 			isYoutube: false
 		},
-		// proFeatures: [
-		// 	''
-		// ],
-		changelogs: [
+		startButton: {
+			label: 'Start Editing Now',
+			url: `${adminUrl}post-new.php?post_type=page`
+		}
+	}
+}
+
+export const welcomeInfo = (adminUrl = '') => ({
+	keywords: [
+		'YouTube', 'Vimeo', 'SoundCloud', 'Spotify', 
+		'Google Map', 'Twitch', 'Facebook', 'Pinterest', 
+		'LinkedIn', 'Reddit', 'CodePen'
+	],
+	keywordsLabel: 'Supported Sources',
+	gettingStarted: {
+		tabs: [
 			{
-				version: '1.1.6 - 25 Feb 2026',
-				type: 'update',
-				list: [
-					'Update Admin Dashboard',
-				]
-			},
-			{
-				version: '1.1.5',
-				type: 'update',
-				list: [
-					'Fixed TwitFrame Embedder Error',
-					'Fixed Redit Embedder Error'
-				]
-			},
-			{
-				version: '1.1.4',
-				type: 'fix',
-				list: [
-					'Fixed Cross Site Scripting (XSS)'
-				]
-			},
-			{
-				version: '1.1.2',
-				type: 'fix',
-				list: [
-					'Fixed deprecated error'
-				]
-			},
-			{
-				version: '1.0.0',
-				type: 'new',
-				list: [
-					'Initaial release'
+				key: 'elementor',
+				label: 'Elementor',
+				icon: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>,
+				steps: [
+					{
+						num: 1,
+						title: 'Create or Edit a Page',
+						body: 'Go to <strong>Pages › Add New</strong> and click <strong>Edit with Elementor</strong>.',
+						link: {
+							url: `${adminUrl}post-new.php?post_type=page`,
+							label: 'Create New Page'
+						}
+					},
+					{
+						num: 2,
+						title: 'Search for All Embed Widgets',
+						body: 'In the Elementor panel, search for "YouTube Embeder", "Vimeo Embeder", "Spotify Embeder", etc.'
+					},
+					{
+						num: 3,
+						title: 'Drag and Drop',
+						body: 'Drag the widget onto your section and enter the media URL in the content settings.'
+					}
 				]
 			}
 		]
-	}
-}
+	},
+	changelogsLimit: 4,
+	changelogsReadMoreLabel: 'View More Changelogs',
+	proFeatures: [
+		'Embed prototypes and visually rich layouts from InVision and Genially.',
+		'Showcase high-resolution or zoomable media from Imgur, Sirv, and Kuula.',
+		'Integrate custom contact and subscription forms using JotForm.',
+		'Add professional video analysis and clips via Dartfish integration.',
+		'Unlock additional styling, custom sizing, and alignment controls for all platforms.'
+	],
+	changelogs: [
+		{
+			version: '1.1.8 - 12 July 2026',
+			type: 'update',
+			list: [
+				'<strong>Update</strong> Add New Admin Dashboard',
+				'<strong>Update</strong> Update Freemius SDK to new version 2.13.4',
+			]
+		},
+		{
+			version: '1.1.7 - 05 July 2026',
+			type: 'update',
+			list: [
+				'<strong>Update</strong> Update Freemius SDK to new version 2.13.2',
+			]
+		},
+		{
+			version: '1.1.6 - 25 Feb 2026',
+			type: 'update',
+			list: [
+				'<strong>Update</strong> Update Admin Dashboard',
+			]
+		},
+		{
+			version: '1.1.5',
+			type: 'update',
+			list: [
+				'<strong>Fixed</strong> Fix TwitFrame Embedder Error',
+				'<strong>Fixed</strong> Fix Redit Embedder Error'
+			]
+		},
+		{
+			version: '1.1.4',
+			type: 'fix',
+			list: [
+				'<strong>Fixed</strong> Fixed Cross Site Scripting (XSS)'
+			]
+		},
+		{
+			version: '1.1.2',
+			type: 'fix',
+			list: [
+				'<strong>Fixed</strong> Fixed deprecated error'
+			]
+		},
+		{
+			version: '1.0.0',
+			type: 'new',
+			list: [
+				'<strong>New</strong>Initial release'
+			]
+		}
+	]
+})
 
 
 export const demoInfo = {

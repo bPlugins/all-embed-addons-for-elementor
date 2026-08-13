@@ -38,6 +38,7 @@ module.exports = {
 		'react/prop-types': 'off',
 		'react/react-in-jsx-scope': 'off',
 		'react/display-name': 'off',
+		'react/no-unknown-property': 'off',
 		'no-process-exit': 'off',
 		'no-unsafe-optional-chaining': 'off',
 		'object-shorthand': 'warn',

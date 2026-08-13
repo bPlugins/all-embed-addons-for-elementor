@@ -1,4 +1,4 @@
-import { VimeoIcon, youTubeIcon, soundCloudIcon, slideShareIcon, dartfishIcon, sirvIcon, redditIcon, geniallyIcon, linedInIcon, pinterestIcon, facebookIcon, bandcampIcon, mixcloudIcon, kuulaIcon, dailyMotionIcon, twitchIcon, twitframeIcon, codepenIcon, invisionIcon, jotFormIcon,appointlyIcon, imgurIcon, giphyIcon, spotifyIcon, googleMapIcon } from './blocksIcon';
+import { VimeoIcon, youTubeIcon, soundCloudIcon, slideShareIcon, dartfishIcon, sirvIcon, redditIcon, geniallyIcon, linedInIcon, pinterestIcon, facebookIcon, bandcampIcon, mixcloudIcon, kuulaIcon, dailyMotionIcon, twitchIcon, twitframeIcon, codepenIcon, invisionIcon, jotFormIcon,appointlyIcon, imgurIcon, giphyIcon, spotifyIcon, googleMapIcon, googlePhotosIcon } from './blocksIcon';
 
 const pluginSlug = 'all-embed-addons-for-elementor';
 
@@ -181,6 +181,13 @@ export default [
         title: 'Reddit Embeder',
         icon: redditIcon,
         demo: `${demoLink}/reddit-embed/`,
+        docs: `${docsURL}`,
+    },
+    {
+        name: `bae_google_photos`,
+        title: 'Google Photos Embedder',
+        icon: googlePhotosIcon,
+        demo: `${demoLink}/google-photos-embed/`,
         docs: `${docsURL}`,
     },
 

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: All Embed Addons for elementor
  * Description: Collection of All types of Embed  files such as  YouTube, Vimeo and more....
- * Version:     1.1.6
+ * Version:     1.1.8
  * Author:      bPlugins
  * Author URI:  https://bPlugins.com
  * Text Domain: allembed
@@ -13,10 +13,13 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 if ( function_exists( 'aeafe_fs' ) ) {
         aeafe_fs()->set_basename( true, __FILE__ );
 } else {
-	define('AEAFE_VERSION', isset($_SERVER['HTTP_HOST']) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.6');
+	define('AEAFE_VERSION', isset($_SERVER['HTTP_HOST']) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.1.8');
 	define('AEAFE_DIR_URL', plugin_dir_url(__FILE__));
 	define('AEAFE_DIR_PATH', plugin_dir_path(__FILE__));
 	define('AEAFE_HAS_PRO', plugin_basename( __FILE__ ) === "all-embed-addons-for-elementor-pro/all-embed.php");
+
+	require_once dirname( __FILE__ ) . '/includes/GooglePhotosAPI.php';
+	require_once dirname( __FILE__ ) . '/includes/APICredentials.php';
 
 	if ( ! function_exists( 'aeafe_fs' ) ) {
 		// Create a helper function for easy SDK access.
@@ -81,7 +84,7 @@ if ( function_exists( 'aeafe_fs' ) ) {
 		 * @since 1.2.0
 		 * @var string The plugin version.
 		 */
-		const VERSION = '1.1.6';
+		const VERSION = '1.1.8';
 
 		/**
 		 * Minimum Elementor Version
@@ -97,7 +100,7 @@ if ( function_exists( 'aeafe_fs' ) ) {
 		 * @since 1.2.0
 		 * @var string Minimum PHP version required to run the plugin.
 		 */
-		const MINIMUM_PHP_VERSION = '7.0';
+		const MINIMUM_PHP_VERSION = '7.4';
 
 		/**
 		 * Constructor

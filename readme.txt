@@ -3,10 +3,10 @@ Plugin Name: All Embed Elementor Addons
 Author URI: https://profiles.wordpress.org/bplugins/
 Contributors: bplugins, shehabulislam, hazrath
 Tags: elementor, elementor addon, embed, video, youtube
-Requires at least: 4.7
-Tested up to: 6.9
-Stable tag: 1.1.6
-Requires PHP: 7.1
+Requires at least: 5.0
+Tested up to: 7.0
+Stable tag: 1.1.8
+Requires PHP: 7.4
 Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -171,6 +171,13 @@ Visit: https://bplugins.com/support/
 9. Reddit Embed and Settings Control
 
 == Changelog ==
+
+= 1.1.8 - 12 July 2026 =
+* Add New Admin Dashboard.
+* Update Freemius SDK new version 2.13.4.
+
+= 1.1.7 - 05 July 2026 =
+* Update Freemius SDK to new version 2.13.2
 
 = 1.1.6 - 25 Feb 2026 =
 * Update Admin Dashboard

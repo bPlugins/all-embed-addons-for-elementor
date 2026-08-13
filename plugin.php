@@ -25,6 +25,7 @@ use AllEmebdAddon\Widgets\facebook_addon;
 use AllEmebdAddon\Widgets\pinterest_addon;
 use AllEmebdAddon\Widgets\linkedin_addon;
 use AllEmebdAddon\Widgets\reddit_addon;
+use AllEmebdAddon\Widgets\google_photos_addon;
 /**
  * Class Plugin
  *
@@ -153,6 +154,9 @@ class allembed_Addon {
 		if ( !in_array( 'bae_reddit', $active_widgets, true ) ) {
 			require_once( __DIR__ . '/widgets/reddit.php' );
 		}
+		if ( !in_array( 'bae_google_photos', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/google-photos.php' );
+		}
 	}
 
 	public function widget_styles(){
@@ -166,6 +170,19 @@ class allembed_Addon {
 	function editor_scripts() {
 		wp_register_style("my-style",plugins_url("/assets/css/style.css",__FILE__));
 		wp_enqueue_style( 'my-style' );
+
+		wp_enqueue_script(
+			'aeafe-gphoto-editor',
+			plugins_url( '/assets/js/gphoto-editor.js', __FILE__ ),
+			[ 'jquery', 'elementor-editor' ],
+			AEAFE_VERSION,
+			true
+		);
+
+		wp_localize_script( 'aeafe-gphoto-editor', 'aeafeGphoto', [
+			'ajaxurl' => admin_url( 'admin-ajax.php' ),
+			'nonce'   => wp_create_nonce( 'aeafe_gphoto_nonce' ),
+		] );
 	}
 	/**
 	 * Register Widgets
@@ -259,6 +276,9 @@ class allembed_Addon {
 		}
 		if ( !in_array( 'bae_reddit', $active_widgets, true ) ) {
 			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\reddit_addon() );
+		}
+		if ( !in_array( 'bae_google_photos', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\google_photos_addon() );
 		}
 	}
 	//category registered
