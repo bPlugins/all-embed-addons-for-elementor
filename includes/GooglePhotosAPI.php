@@ -69,7 +69,7 @@ class AEAFE_Google_Photos_API {
             'client_id'     => $this->client_id,
             'redirect_uri'  => $this->get_redirect_uri(),
             'response_type' => 'code',
-            'scope'         => 'https://www.googleapis.com/auth/photoslibrary.readonly',
+            'scope'         => 'https://www.googleapis.com/auth/photoslibrary.readonly https://www.googleapis.com/auth/photospicker.mediaitems.readonly',
             'access_type'   => 'offline',
             'prompt'        => 'consent',
             'state'         => wp_create_nonce( 'aeafe_gphoto_oauth' ),

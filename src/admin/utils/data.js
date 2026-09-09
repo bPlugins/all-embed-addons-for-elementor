@@ -97,6 +97,15 @@ export const welcomeInfo = (adminUrl = '') => ({
 	],
 	changelogs: [
 		{
+			version: '1.1.9 - 30 August 2026',
+			type: 'update',
+			list: [
+				'<strong>New</strong> Google Gallery (Google Photos) widget – display Google Photos in Grid, Masonry, or Carousel layouts.',
+				'<strong>New</strong> Google Picker API integration for selecting photos directly from your Google account.',
+				'<strong>New</strong> Lightbox popup, 7 hover animation effects, caption display, and responsive column controls for Google Gallery.'
+			]
+		},
+		{
 			version: '1.1.8 - 12 July 2026',
 			type: 'update',
 			list: [

@@ -25,7 +25,7 @@ use AllEmebdAddon\Widgets\facebook_addon;
 use AllEmebdAddon\Widgets\pinterest_addon;
 use AllEmebdAddon\Widgets\linkedin_addon;
 use AllEmebdAddon\Widgets\reddit_addon;
-use AllEmebdAddon\Widgets\google_photos_addon;
+use AllEmebdAddon\Widgets\google_photos_plus_addon;
 /**
  * Class Plugin
  *
@@ -154,8 +154,8 @@ class allembed_Addon {
 		if ( !in_array( 'bae_reddit', $active_widgets, true ) ) {
 			require_once( __DIR__ . '/widgets/reddit.php' );
 		}
-		if ( !in_array( 'bae_google_photos', $active_widgets, true ) ) {
-			require_once( __DIR__ . '/widgets/google-photos.php' );
+		if ( !in_array( 'bae_google_photos_plus', $active_widgets, true ) ) {
+			require_once( __DIR__ . '/widgets/google-photos-plus.php' );
 		}
 	}
 
@@ -163,6 +163,14 @@ class allembed_Addon {
 
 		wp_register_style("main-css",plugins_url("/assets/css/styler.css",__FILE__));
 		wp_enqueue_style( 'main-css' );
+
+		// Google Gallery Plus widget CSS (registered; auto-enqueued via get_style_depends)
+		wp_register_style(
+			'aeafe-gphoto-plus-widget',
+			plugins_url( '/assets/css/google-photos-plus-widget.css', __FILE__ ),
+			[],
+			AEAFE_VERSION
+		);
 	}
 
 
@@ -171,17 +179,27 @@ class allembed_Addon {
 		wp_register_style("my-style",plugins_url("/assets/css/style.css",__FILE__));
 		wp_enqueue_style( 'my-style' );
 
+		// Google Gallery Plus — editor CSS + JS
+		wp_enqueue_style(
+			'aeafe-gphoto-plus-editor',
+			plugins_url( '/assets/css/google-photos-plus-editor.css', __FILE__ ),
+			[],
+			AEAFE_VERSION
+		);
+
 		wp_enqueue_script(
-			'aeafe-gphoto-editor',
-			plugins_url( '/assets/js/gphoto-editor.js', __FILE__ ),
+			'aeafe-gphoto-plus-editor',
+			plugins_url( '/assets/js/google-photos-plus-editor.js', __FILE__ ),
 			[ 'jquery', 'elementor-editor' ],
 			AEAFE_VERSION,
 			true
 		);
 
-		wp_localize_script( 'aeafe-gphoto-editor', 'aeafeGphoto', [
-			'ajaxurl' => admin_url( 'admin-ajax.php' ),
-			'nonce'   => wp_create_nonce( 'aeafe_gphoto_nonce' ),
+		wp_localize_script( 'aeafe-gphoto-plus-editor', 'aeafePlusEditor', [
+			'ajaxurl'      => admin_url( 'admin-ajax.php' ),
+			'nonce'        => wp_create_nonce( 'aeafe_gphoto_nonce' ),
+			'connected'    => \AEAFE_Google_Photos_API::instance()->is_connected(),
+			'settings_url' => admin_url( 'admin.php?page=aeafe-google-photos' ),
 		] );
 	}
 	/**
@@ -277,8 +295,8 @@ class allembed_Addon {
 		if ( !in_array( 'bae_reddit', $active_widgets, true ) ) {
 			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\reddit_addon() );
 		}
-		if ( !in_array( 'bae_google_photos', $active_widgets, true ) ) {
-			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\google_photos_addon() );
+		if ( !in_array( 'bae_google_photos_plus', $active_widgets, true ) ) {
+			\Elementor\Plugin::instance()->widgets_manager->register( new Widgets\google_photos_plus_addon() );
 		}
 	}
 	//category registered
@@ -307,12 +325,31 @@ class allembed_Addon {
         add_action( 'elementor/frontend/after_register_styles', [ $this, 'widget_styles' ] , 100 );
         add_action( 'admin_enqueue_scripts', [ $this, 'widget_styles' ] , 100 );
 
+		// Register frontend scripts for Google Gallery Plus (auto-enqueued via get_script_depends)
+		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'register_plus_widget_scripts' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'register_plus_widget_scripts' ] );
+
 		// Register widgets
 		add_action( 'elementor/widgets/register', [ $this, 'register_widgets' ] );
 
 		//category registered
 		add_action( 'elementor/elements/categories_registered',  [ $this,'add_elementor_widget_categories' ]);
 		add_action( 'elementor/editor/after_enqueue_styles', [ $this, 'editor_scripts' ] );
+		add_action( 'elementor/editor/after_enqueue_scripts', [ $this, 'editor_scripts' ] );
+	}
+
+	/**
+	 * Register frontend scripts for the Google Gallery Plus widget.
+	 * The script is auto-enqueued by Elementor when the widget is present on the page.
+	 */
+	public function register_plus_widget_scripts() {
+		wp_register_script(
+			'aeafe-gphoto-plus-gallery',
+			plugins_url( '/assets/js/google-photos-plus-gallery.js', __FILE__ ),
+			[],
+			AEAFE_VERSION,
+			true
+		);
 	}
 	
 }

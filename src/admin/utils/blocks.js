@@ -184,10 +184,10 @@ export default [
         docs: `${docsURL}`,
     },
     {
-        name: `bae_google_photos`,
-        title: 'Google Photos Embedder',
+        name: `bae_google_photos_plus`,
+        title: 'Google Gallery Plus',
         icon: googlePhotosIcon,
-        demo: `${demoLink}/google-photos-embed/`,
+        demo: `${demoLink}/google-photos-gallery-plus/`,
         docs: `${docsURL}`,
     },
 

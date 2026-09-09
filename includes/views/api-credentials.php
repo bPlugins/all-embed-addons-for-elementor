@@ -41,16 +41,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<div class="aeafe-card-header">
 				<div class="aeafe-card-title-wrap">
 					<span class="aeafe-service-icon google-photos-icon">
-						<svg viewBox="0 0 24 24" width="24" height="24">
-							<path d="M12 0C8.74 0 6.5 3.075 6.5 6.5h5.25v5.25H6.5C6.5 14.925 8.74 18 12 18V0z" fill="#F04231"/>
-							<path d="M24 12c0-3.26-3.075-5.5-6.5-5.5v5.25h-5.25V6.5C9.075 6.5 6 8.74 6 12h18z" fill="#1977F2"/>
-							<path d="M12 24c3.26 0 5.5-3.075 5.5-6.5h-5.25v-5.25H17.5c0 3.175-2.24 5.5-5.5 5.5V24z" fill="#30A952"/>
-							<path d="M0 12c0 3.26 3.075 5.5 6.5 5.5v-5.25h5.25V17.5C8.575 17.5 6 15.26 6 12H0z" fill="#FFBD00"/>
+						<svg viewBox="0 0 256 256" width="24" height="24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+							<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+							<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+							<g id="SVGRepo_iconCarrier">
+								<g>
+									<path d="M64,58.1485714 C99.328,58.1485714 128,86.8205714 128,122.148571 L128,122.148571 L128,128 L5.85142857,128 C2.63314286,128 0,125.366857 0,122.148571 C0,86.8205714 28.672,58.1485714 64,58.1485714 L64,58.1485714 Z" fill="#FBBB05"></path>
+									<path d="M197.851429,64 C197.851429,99.328 169.179429,128 133.851429,128 L128,128 L128,5.85142857 C128,2.63314286 130.633143,0 133.851429,0 L133.851429,0 C169.179429,0 197.851429,28.672 197.851429,64 Z" fill="#E94335"></path>
+									<path d="M192,197.851429 C156.672,197.851429 128,169.179429 128,133.851429 L128,133.851429 L128,128 L250.148571,128 C253.366857,128 256,130.633143 256,133.851429 L256,133.851429 C256,169.179429 227.328,197.851429 192,197.851429 L192,197.851429 Z" fill="#4285F4"></path>
+									<path d="M58.1485714,192 C58.1485714,156.672 86.8205714,128 122.148571,128 L128,128 L128,250.148571 C128,253.366857 125.366857,256 122.148571,256 L122.148571,256 C86.8205714,256 58.1485714,227.328 58.1485714,192 Z" fill="#0F9D58"></path>
+								</g>
+							</g>
 						</svg>
 					</span>
 					<div>
 						<h2><?php esc_html_e( 'Google Photos API', 'allembed' ); ?></h2>
-						<span class="aeafe-card-subtitle"><?php esc_html_e( 'Used by the "Gallery for Google Photos" Elementor widget', 'allembed' ); ?></span>
+						<span class="aeafe-card-subtitle"><?php esc_html_e( 'Used by the "Google Gallery" Elementor widget', 'allembed' ); ?></span>
 					</div>
 				</div>
 				<div class="aeafe-status-badge <?php echo $is_connected ? 'status-connected' : ( $has_creds ? 'status-ready' : 'status-unconfigured' ); ?>">
@@ -151,9 +157,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<span>
 							<?php
 							printf(
-								esc_html__( 'Open %1$sGoogle Cloud Console%2$s → Enable "Photos Library API".', 'allembed' ),
+								esc_html__( 'Open %1$sGoogle Cloud Console%2$s → Enable both %3$sPhotos Library API%4$s and %5$sPhotos Picker API%6$s in your project.', 'allembed' ),
 								'<a href="https://console.cloud.google.com/" target="_blank" rel="noopener noreferrer">',
-								'</a>'
+								'</a>',
+								'<strong>',
+								'</strong>',
+								'<strong>',
+								'</strong>'
 							);
 							?>
 						</span>
@@ -193,7 +203,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</li>
 					<li>
 						<strong><?php esc_html_e( 'Authorize Photos Scope:', 'allembed' ); ?></strong>
-						<span><?php esc_html_e( 'In Step 1, select or enter "https://www.googleapis.com/auth/photoslibrary.readonly" → click "Authorize APIs" and sign in.', 'allembed' ); ?></span>
+						<span><?php esc_html_e( 'In Step 1, select or enter "https://www.googleapis.com/auth/photospicker.mediaitems.readonly" → click "Authorize APIs" and sign in.', 'allembed' ); ?></span>
 					</li>
 					<li>
 						<strong><?php esc_html_e( 'Exchange Tokens & Copy Refresh Token:', 'allembed' ); ?></strong>
@@ -208,7 +218,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				<div class="aeafe-help-footer">
 					<p>
 						<span class="dashicons dashicons-info"></span>
-						<?php esc_html_e( 'Once connected, your Google Photos albums will appear in the Elementor widget setting panel.', 'allembed' ); ?>
+						<?php esc_html_e( 'Once connected, you can pick photos from Google Photos directly inside the Google Gallery Elementor widget.', 'allembed' ); ?>
 					</p>
 				</div>
 			</div>

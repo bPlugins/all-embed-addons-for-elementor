@@ -4,28 +4,30 @@ Author URI: https://profiles.wordpress.org/bplugins/
 Contributors: bplugins, shehabulislam, hazrath
 Tags: elementor, elementor addon, embed, video, youtube
 Requires at least: 5.0
-Tested up to: 7.0
-Stable tag: 1.1.8
+Tested up to: 7.1
+Stable tag: 1.1.9
 Requires PHP: 7.4
 Donate link: https://www.buymeacoffee.com/abuhayat
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Easily embed a variety of content into your Elementor designs with versatile widgets. Supports video, audio, forms, and more from popular platforms.
+Easily embed a variety of content into your Elementor designs with versatile widgets. Supports video, audio, forms, Google Photos galleries, and more from popular platforms.
 
 == Description ==
 
-Looking to embed YouTube videos, Spotify music, Google Maps, JotForm forms, or social media posts directly inside your Elementor pages?  
+Looking to embed YouTube videos, Spotify music, Google Maps, JotForm forms, Google Photos galleries, or social media posts directly inside your Elementor pages?  
 [**All Embed Addon for Elementor**](https://bplugins.com/products/all-embed-addons-for-elementor/) makes it incredibly simple!
-This addon gives you a collection of powerful, ready-to-use widgets that support **video, audio, forms, interactive content, 360° images, music, slides, social posts, and more**—all embedded seamlessly inside Elementor. Perfect for bloggers, agencies, marketers, educators, and creative professionals who want to embed content without dealing with complex code or iframes.
+This addon gives you a collection of powerful, ready-to-use widgets that support **video, audio, forms, interactive content, 360° images, music, slides, Google Photos galleries, social posts, and more**—all embedded seamlessly inside Elementor. Perfect for bloggers, agencies, marketers, educators, and creative professionals who want to embed content without dealing with complex code or iframes.
 
 ==== Check our overview and demos 👇 ====
 
 [**All Embed Addons for Elementor – Info**](https://bplugins.com/products/all-embed-addons-for-elementor/) | [**Documentation**](https://bplugins.com/docs/all-embed-addons-for-elementor/) | [**Support**](https://bplugins.com/support/) | [**Demo**](https://bplugins.com/products/all-embed-addons-for-elementor/)
 
+https://youtube.com/watch?v=R8DKKPfZkug
+
 === Why Use All Embed Addons? ===
 
-- **Embed from 24+ Platforms:** Videos, audio, forms, images, slides, prototypes, VR content, and social posts.
+- **Embed from 25+ Platforms:** Videos, audio, forms, images, Google Photos galleries, slides, prototypes, VR content, and social posts.
 - **No Coding Needed:** Just paste your embed link—everything works instantly.
 - **Fully Responsive:** All embeds automatically adapt to phones, tablets, and desktops.
 - **Customizable Controls:** Adjust height, width, alignment, autoplay, lazy loading, and more.
@@ -60,6 +62,7 @@ This addon gives you a collection of powerful, ready-to-use widgets that support
 23. **Pinterest Embed**: Share boards, pins, or profiles.  
 24. **LinkedIn Embed**: Showcase LinkedIn posts or profiles.  
 25. **Reddit Embed**: Embed posts and discussions from Reddit.  
+26. **Google Gallery (Google Photos)**: Display stunning photo galleries from your Google Photos library using the Google Picker API. Supports Grid, Masonry, and Interactive Carousel layouts with lightbox, hover animations, captions, and fully responsive design.  
 
 === Key Features ===
 
@@ -69,6 +72,7 @@ This addon gives you a collection of powerful, ready-to-use widgets that support
 - **360° VR & Interactive Content**
 - **Custom Height / Width Settings**
 - **Autoplay & Player Controls**
+- **Google Photos Gallery** – Pick photos directly from your Google account with the Google Picker API and display them in Grid, Masonry, or Carousel layouts. Features lightbox popup, 7 hover animation effects, adjustable aspect ratios, captions, and full responsive column control.
 
 === Easy Integration ===
 
@@ -138,7 +142,7 @@ Method 2: Manual Installation via Upload
 == Frequently Asked Questions ==
 
 = What platforms does this plugin support? =  
-All Embed Addons supports 24+ platforms including YouTube, Vimeo, SoundCloud, Spotify, SlideShare, JotForm, Google Maps, Twitch, Facebook, LinkedIn, Reddit, Giphy, and many more.
+All Embed Addons supports 25+ platforms including YouTube, Vimeo, SoundCloud, Spotify, SlideShare, JotForm, Google Maps, Google Photos, Twitch, Facebook, LinkedIn, Reddit, Giphy, and many more.
 
 = Do I need coding skills to use the plugin? =  
 Not at all! Just drag any widget into your Elementor layout and paste your embed link.
@@ -159,6 +163,12 @@ Yes, the plugin works with both Elementor Free and Elementor Pro.
 Our support team is always ready to help!  
 Visit: https://bplugins.com/support/
 
+= How do I use the Google Gallery (Google Photos) widget? =  
+First, go to the **All Embed > API Credentials** settings page and connect your Google account. Then, in the Elementor editor, drag the **Google Gallery** widget onto your page and click "Select Photos from Google" to pick photos using the Google Picker. You can choose between Grid, Masonry, or Carousel layouts and customize hover effects, lightbox, captions, aspect ratios, and more.
+
+= What layouts are available for the Google Gallery widget? =  
+The Google Gallery widget supports three layouts: **Grid Gallery** (with customizable aspect ratios), **Masonry Showcase** (natural photo proportions), and **Interactive Carousel** (with autoplay, navigation arrows, and pagination dots).
+
 == Screenshots ==
 1. LinkedIn Embed
 2. YouTube Embed
@@ -169,8 +179,16 @@ Visit: https://bplugins.com/support/
 7. Facebook Embed
 8. Kuula Embed
 9. Reddit Embed and Settings Control
+10. Google Gallery – Grid Layout
+11. Google Gallery – Masonry Layout
+12. Google Gallery – Carousel Layout
 
 == Changelog ==
+
+= 1.1.9 - 30 August 2026 =
+* New: Google Gallery (Google Photos) widget – display Google Photos in Grid, Masonry, or Carousel layouts.
+* New: Google Picker API integration for selecting photos directly from your Google account.
+* New: Lightbox popup, 7 hover animation effects, caption display, and responsive column controls for Google Gallery.
 
 = 1.1.8 - 12 July 2026 =
 * Add New Admin Dashboard.
